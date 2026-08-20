@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MBA 8101 课程笔记</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+  }
+  h1 {
+    border-bottom: 3px solid #2c5282;
+    padding-bottom: 10px;
+    color: #2c5282;
+  }
+  h2 {
+    color: #2b6cb0;
+    margin-top: 30px;
+    border-left: 4px solid #2b6cb0;
+    padding-left: 10px;
+  }
+  h3 { color: #444; margin-top: 20px; }
+  h4 { color: #4a5568; margin: 16px 0 6px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0;
+    background: #fff;
+  }
+  th, td {
+    border: 1px solid #cbd5e0;
+    padding: 8px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #ebf8ff; }
+  tr.total { background: #fefcbf; font-weight: bold; }
+  tr.subtotal { background: #f7fafc; font-weight: 600; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .box {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 14px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .formula {
+    background: #ebf8ff;
+    border-left: 4px solid #3182ce;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-family: "Times New Roman", serif;
+  }
+  .answer {
+    background: #f0fff4;
+    border-left: 4px solid #38a169;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  .note {
+    background: #fffaf0;
+    border-left: 4px solid #ed8936;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-size: 0.95em;
+  }
+  .quote {
+    background: #f7fafc;
+    border-left: 4px solid #a0aec0;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-style: italic;
+  }
+  .term {
+    background: #faf5ff;
+    border-left: 4px solid #805ad5;
+    padding: 8px 12px;
+    margin: 10px 0;
+  }
+  /* T 型账户（T-account） */
+  .tacct {
+    display: inline-block;
+    min-width: 260px;
+    margin: 12px 16px 12px 0;
+    vertical-align: top;
+    background: #fff;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .tacct .tname {
+    text-align: center;
+    font-weight: bold;
+    background: #ebf8ff;
+    border-bottom: 2px solid #2c5282;
+    padding: 6px 8px;
+  }
+  .tacct .tcols { display: grid; grid-template-columns: 1fr 1fr; }
+  .tacct .tcols > div { padding: 6px 10px; font-size: 0.93em; }
+  .tacct .tcols > div:first-child { border-right: 2px solid #2c5282; }
+  .tacct .thead {
+    font-weight: 600;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .tacct .tline { display: flex; justify-content: space-between; gap: 8px; }
+  .tacct .tline .amt { font-variant-numeric: tabular-nums; }
+  .tacct .tbal { border-top: 1px solid #cbd5e0; font-weight: bold; background: #f7fafc; }
+  /* 会计恒等式 / 图示 */
+  .eq {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 12px 0;
+  }
+  .eq .part {
+    flex: 1 1 140px;
+    background: #fff;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+  .eq .part.hl { background: #ebf8ff; border-color: #3182ce; font-weight: 600; }
+  .eq .op { align-self: center; font-size: 1.3em; color: #2c5282; font-weight: bold; }
+  .eq .cn { display: block; color: #718096; font-size: 0.82em; font-weight: normal; }
+  .ch { color: #718096; font-size: 0.85em; font-style: italic; margin-left: 4px; }
+  @media (max-width: 600px) {
+    .tacct { min-width: 100%; margin-right: 0; }
+  }
+  .toolbar {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    z-index: 100;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  button {
+    background: #2c5282;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  button:hover { background: #2b6cb0; }
+  button.danger { background: #c53030; }
+  button.danger:hover { background: #9b2c2c; }
+  #status { color: #38a169; font-size: 14px; }
+  [contenteditable="true"]:focus {
+    outline: 2px solid #3182ce;
+    outline-offset: 2px;
+    background: #fffef0;
+  }
+  .toc {
+    background: #fff;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  }
+  .toc-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    color: #2c5282;
+    font-size: 1.05em;
+  }
+  .toc-head .arrow { transition: transform 0.2s; }
+  .toc.collapsed .arrow { transform: rotate(-90deg); }
+  .toc.collapsed #tocList { display: none; }
+  #tocList {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+    columns: 2;
+    column-gap: 24px;
+  }
+  #tocList li { margin: 4px 0; break-inside: avoid; }
+  #tocList li.sub { padding-left: 16px; font-size: 0.92em; }
+  #tocList li.group { break-inside: avoid; margin-top: 10px; }
+  #tocList li.group > a { font-weight: 600; }
+  #tocList li.group > ul { list-style: none; padding: 0; margin: 2px 0 0 0; }
+  #tocList a {
+    color: #2b6cb0;
+    text-decoration: none;
+    display: block;
+    padding: 3px 6px;
+    border-radius: 4px;
+  }
+  #tocList a:hover { background: #ebf8ff; text-decoration: underline; }
+  #tocList .empty { color: #a0aec0; font-size: 0.92em; }
+  @media (max-width: 600px) { #tocList { columns: 1; } }
+  .h2-anchor { scroll-margin-top: 70px; }
+  .meta { color: #718096; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <button onclick="toggleEdit()" id="editBtn">✏️ 进入编辑模式</button>
+  <button onclick="saveNotes()">💾 保存</button>
+  <button onclick="exportHTML()">📥 导出 HTML</button>
+  <button onclick="resetNotes()" class="danger">🔄 重置</button>
+  <span id="status"></span>
+</div>
+
+<nav class="toc" id="toc">
+  <div class="toc-head" onclick="document.getElementById('toc').classList.toggle('collapsed')">
+    <span>📑 目录</span>
+    <span class="arrow">▼</span>
+  </div>
+  <ul id="tocList"></ul>
+</nav>
+
+<div id="content">
+
+<h1 contenteditable="false">MBA 8101 Financial &amp; Managerial Accounting</h1>
+<p contenteditable="false"><em>财务与管理会计 — 课堂笔记</em></p>
+<p class="meta" contenteditable="false">Strathmore Business School · MBA</p>
+
+<div class="note" contenteditable="false">
+  笔记随课堂进度添加：上课时把讲的内容、题目、PPT/PDF 发过来，我按节整理进这一页。
+</div>
+
+</div>
+
+<script>
+let editMode = false;
+const NOTES_VERSION = '2026-08-20-init-v1';
+
+function toggleEdit() {
+  editMode = !editMode;
+  const btn = document.getElementById('editBtn');
+  const elements = document.querySelectorAll('#content [contenteditable]');
+  elements.forEach(el => {
+    el.setAttribute('contenteditable', editMode ? 'true' : 'false');
+  });
+  btn.textContent = editMode ? '🔒 退出编辑模式' : '✏️ 进入编辑模式';
+  showStatus(editMode ? '已进入编辑模式 — 点击任意位置即可修改' : '已退出编辑模式');
+}
+
+function saveNotes() {
+  const content = document.getElementById('content').innerHTML;
+  localStorage.setItem('mba8101_notes', content);
+  localStorage.setItem('mba8101_notes_version', NOTES_VERSION);
+  buildTOC();
+  showStatus('✅ 已保存到浏览器本地存储 (' + new Date().toLocaleTimeString() + ')');
+}
+
+function loadNotes() {
+  const saved = localStorage.getItem('mba8101_notes');
+  const savedVersion = localStorage.getItem('mba8101_notes_version');
+  if (saved && savedVersion === NOTES_VERSION) {
+    document.getElementById('content').innerHTML = saved;
+    showStatus('📂 已加载上次保存的笔记');
+  } else if (saved) {
+    // 保留旧版本地编辑，同时优先展示文件里的最新课程内容。
+    localStorage.setItem('mba8101_notes_backup', saved);
+    localStorage.removeItem('mba8101_notes');
+    localStorage.removeItem('mba8101_notes_version');
+    showStatus('🆕 已加载新版课程笔记；旧的本地编辑已备份');
+  }
+}
+
+function resetNotes() {
+  if (confirm('确定要重置为初始内容吗？保存的修改将丢失。')) {
+    localStorage.removeItem('mba8101_notes');
+    localStorage.removeItem('mba8101_notes_version');
+    location.reload();
+  }
+}
+
+function exportHTML() {
+  const html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>MBA 8101 笔记导出</title></head><body>' +
+               document.getElementById('content').innerHTML + '</body></html>';
+  const blob = new Blob([html], {type: 'text/html'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'MBA8101_Notes_' + new Date().toISOString().slice(0,10) + '.html';
+  a.click();
+  URL.revokeObjectURL(url);
+  showStatus('📥 已导出为 HTML 文件');
+}
+
+function showStatus(msg) {
+  const s = document.getElementById('status');
+  s.textContent = msg;
+  setTimeout(() => { s.textContent = ''; }, 3000);
+}
+
+// 自动生成目录（h2 = 每节课，h3 = 该节课下的小节，缩进显示；支持编辑后重建）
+function buildTOC() {
+  const heads = document.querySelectorAll('#content h2, #content h3');
+  const list = document.getElementById('tocList');
+  list.innerHTML = '';
+  if (heads.length === 0) {
+    const li = document.createElement('li');
+    li.className = 'empty';
+    li.textContent = '（还没有内容）';
+    list.appendChild(li);
+    return;
+  }
+  // 每个 h2 连同它下面的 h3 打包成一组，避免分栏时父子被拆开
+  let group = null;
+  heads.forEach((h, i) => {
+    const id = 'sec-' + i;
+    h.id = id;
+    h.classList.add('h2-anchor');
+    const isSub = h.tagName === 'H3';
+    const a = document.createElement('a');
+    a.href = '#' + id;
+    a.textContent = (isSub ? '└ ' : '') + h.textContent.trim();
+    a.onclick = (e) => {
+      e.preventDefault();
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', '#' + id);
+    };
+    if (isSub) {
+      const li = document.createElement('li');
+      li.className = 'sub';
+      li.appendChild(a);
+      // 开头就出现 h3（还没有 h2）时直接挂在顶层
+      (group || list).appendChild(li);
+    } else {
+      const wrap = document.createElement('li');
+      wrap.className = 'group';
+      wrap.appendChild(a);
+      const subList = document.createElement('ul');
+      wrap.appendChild(subList);
+      list.appendChild(wrap);
+      group = subList;
+    }
+  });
+}
+
+// 自动加载已保存的笔记，然后生成目录（互不阻塞：任一步出错不影响另一步）
+window.addEventListener('load', () => {
+  try { loadNotes(); } catch (e) { console.warn('loadNotes failed:', e); }
+  try { buildTOC(); } catch (e) { console.warn('buildTOC failed:', e); }
+});
+// 兜底：DOM 就绪时也先构建一次目录
+document.addEventListener('DOMContentLoaded', () => {
+  try { buildTOC(); } catch (e) {}
+});
+
+// 自动保存（每30秒）
+setInterval(() => {
+  if (editMode) saveNotes();
+}, 30000);
+</script>
+
+</body>
+</html>
