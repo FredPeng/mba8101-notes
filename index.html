@@ -138,6 +138,46 @@
   .eq .op { align-self: center; font-size: 1.3em; color: #2c5282; font-weight: bold; }
   .eq .cn { display: block; color: #718096; font-size: 0.82em; font-weight: normal; }
   .ch { color: #718096; font-size: 0.85em; font-style: italic; margin-left: 4px; }
+  /* 流程 / 结构图 */
+  .flow { margin: 14px 0; }
+  .flow .fstep {
+    background: #fff;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+  }
+  .flow .fstep.start { background: #bee3f8; border-color: #3182ce; font-weight: 600; }
+  .flow .fstep.users { background: #faf5ff; border-color: #b794f4; }
+  .flow .fgroup { background: #edf2f7; border: 1px solid #cbd5e0; border-radius: 6px; padding: 8px; }
+  .flow .fgroup.pos { background: #ebf8ff; border-color: #90cdf4; }
+  .flow .fgroup.chg { background: #f0fff4; border-color: #9ae6b4; }
+  .flow .fgroup-head { padding: 2px 6px 8px; font-weight: 600; }
+  .flow .fcols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .flow .fcols.two { grid-template-columns: repeat(2, 1fr); }
+  .flow .fcols.three { grid-template-columns: repeat(3, 1fr); }
+  .flow .fcols > div {
+    background: #fff;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 0.9em;
+  }
+  .flow .farrow { text-align: center; color: #3182ce; line-height: 1.2; margin: 2px 0; }
+  .flow .cn { display: block; color: #718096; font-size: 0.82em; font-weight: normal; }
+  .users-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .users-row .u {
+    flex: 1 1 130px;
+    background: #faf5ff;
+    border: 1px solid #b794f4;
+    border-radius: 999px;
+    padding: 8px 14px;
+    text-align: center;
+    font-size: 0.92em;
+  }
+  @media (max-width: 600px) {
+    .flow .fcols, .flow .fcols.three { grid-template-columns: repeat(2, 1fr); }
+  }
   @media (max-width: 600px) {
     .tacct { min-width: 100%; margin-right: 0; }
   }
@@ -247,11 +287,278 @@
   笔记随课堂进度添加：上课时把讲的内容、题目、PPT/PDF 发过来，我按节整理进这一页。
 </div>
 
+
+<h2 contenteditable="false">Topic 1 — Introduction（导论）</h2>
+
+<p class="meta" contenteditable="false">讲义：MBA FMA – Topic 1 Introduction (Summary)，p.1 · FAR = Financial Accounting and Reporting（财务会计与报告）</p>
+
+<h3 contenteditable="false">整体脉络（讲义结构图）</h3>
+
+<div class="flow" contenteditable="false">
+  <div class="fstep start">Definition, Nature and Justification of FAR<span class="cn">FAR 是什么、性质如何、为什么需要它</span></div>
+  <div class="farrow">↓</div>
+  <div class="fstep start">Objective of FAR — the information provided by FAR<span class="cn">FAR 的目标：它提供什么信息</span></div>
+  <div class="farrow">↓</div>
+  <div class="fgroup pos">
+    <div class="fgroup-head">1. Financial Position — 资源在期初、期末是什么状态？<span class="cn">Statement of Financial Position (SFP)</span></div>
+    <div class="fcols three">
+      <div>Assets<span class="cn">资产</span></div>
+      <div>Liabilities<span class="cn">负债</span></div>
+      <div>Capital / Equity<span class="cn">资本 / 权益</span></div>
+    </div>
+  </div>
+  <div class="farrow">↓</div>
+  <div class="fgroup chg">
+    <div class="fgroup-head">2. Changes in Financial Position — 期间内怎么变成这样的？<span class="cn">How did we get here?</span></div>
+    <div class="fcols">
+      <div>2.1 Financial Performance<span class="cn">经营业绩 → PoL</span></div>
+      <div>2.2 Cash Flows<span class="cn">现金流 → SCF</span></div>
+      <div>2.3 Transactions with owners<span class="cn">与所有者的交易 → SCE</span></div>
+      <div>2.4 Other assets &amp; liabilities<span class="cn">其他资产负债变动 → 附表</span></div>
+    </div>
+  </div>
+  <div class="farrow">↓</div>
+  <div class="fstep users">Who is interested with this story? → The interested parties are called <strong>Users</strong><span class="cn">谁关心这个故事？——利益相关方统称「使用者」，共分 7 类</span></div>
+</div>
+
+<div class="note" contenteditable="false">
+  一句话抓住整章：<strong>FAR 是在讲一个关于「资源」的故事</strong>——资源现在是什么样（Financial Position），这一期是怎么变过来的（Changes），以及这个故事是讲给谁听的（Users）。
+</div>
+
+<h3 contenteditable="false">1. Definition, Nature and Justification of FAR（定义、性质与存在理由）</h3>
+
+<div class="box" contenteditable="false">
+  <h4>Definition（定义）</h4>
+  <ul>
+    <li><strong>Informally（通俗地说）</strong>：Telling a story about resources in the organization.<br>
+      <span class="meta">讲一个关于组织内部资源的故事。</span></li>
+    <li><strong>Formally（正式定义）</strong>：The process of <strong>identifying, measuring and reporting</strong> economic information to allow <strong>informed decision making</strong> by the relevant users. Economic information relates to the <strong>resources of the entity</strong>.<br>
+      <span class="meta">识别、计量、报告经济信息的过程，目的是让相关使用者做出有依据的决策。这里的经济信息，指的就是主体（entity）的资源。</span></li>
+  </ul>
+
+  <div class="term">
+    三个动词是考点：<strong>identifying（识别）→ measuring（计量）→ reporting（报告）</strong>。
+    落脚点是 <em>informed decision making</em>——会计存在的意义是服务决策，不是记账本身。
+  </div>
+
+  <h4>Nature（性质）</h4>
+  <ul>
+    <li>Organizations carry out <strong>numerous transactions</strong>. FAR helps <strong>collect, record, classify, summarize and report</strong> these transactions.<br>
+      <span class="meta">组织每天发生大量交易；FAR 的作用是把这些交易收集、记录、分类、汇总、报告出来。</span></li>
+  </ul>
+
+  <div class="term">
+    这五步 <strong>collect → record → classify → summarize → report</strong> 就是后面整门课的主线：
+    从原始凭证一路做到财务报表。
+  </div>
+
+  <h4>Justification on accountability（存在理由：受托责任）</h4>
+  <ul>
+    <li>There are several interested parties with the information as guided by <strong>agency theory</strong> (account to owners) and <strong>stakeholder theory</strong> (several people).<br>
+      <span class="meta">有多方关心这些信息，其依据是两个理论：代理理论（管理层要向所有者交代）和利益相关者理论（要向更多方交代）。</span></li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr><th>理论</th><th>向谁负责</th><th>含义</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Agency theory</strong><br><span class="meta">代理理论</span></td>
+        <td>Owners（所有者）</td>
+        <td>管理层是所有者的代理人，必须 <em>account to owners</em>——向所有者交账。</td>
+      </tr>
+      <tr>
+        <td><strong>Stakeholder theory</strong><br><span class="meta">利益相关者理论</span></td>
+        <td>Several people（多方）</td>
+        <td>不只对所有者，对员工、客户、供应商、政府、公众等都负有报告责任。</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 contenteditable="false">2. Objective of FAR（FAR 的目标）</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>The information provided by FAR：FAR is a story about resources.</strong>（FAR 提供的信息，就是一个关于资源的故事。）</p>
+  <p><strong>What about resources?</strong>（关于资源，到底要讲什么？）分成两大块：</p>
+  <ol>
+    <li><strong>Financial Position</strong> — 资源在期末和期初分别是什么状态（静态、某一时点）。</li>
+    <li><strong>Changes in Financial Position</strong> — 这一期资源是怎么从期初变到期末的（动态、一段期间）。<em>How did we get here?</em></li>
+  </ol>
+
+  <div class="note">讲义此处标注 <strong>「See EAC 2024」</strong>——课上提到的参考资料，具体是哪份待确认补上。</div>
+</div>
+
+<h3 contenteditable="false">3. Financial Position（财务状况）— SFP</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>What is the status of resources as at the end and as at the beginning of the period?</strong><br>
+    <span class="meta">资源在期末、期初分别处于什么状态？</span></p>
+  <p>对应报表：<strong>Statement of Financial Position (SFP)</strong> — 财务状况表（即资产负债表）。</p>
+
+  <h4>资源从哪来：两个出资方</h4>
+  <p>Org. has resources = <strong>Assets</strong>, funded by:</p>
+  <ul>
+    <li><strong>Owners</strong> — capital / equity（所有者出资：资本 / 权益）</li>
+    <li><strong>Non-owners</strong> — liabilities / debt（非所有者出资：负债 / 债务）</li>
+  </ul>
+
+  <div class="eq">
+    <div class="part hl">Assets<span class="cn">资产（资源）</span></div>
+    <div class="op">=</div>
+    <div class="part">Capital<span class="cn">所有者出的（equity）</span></div>
+    <div class="op">+</div>
+    <div class="part">Liabilities<span class="cn">非所有者出的（debt）</span></div>
+  </div>
+
+  <div class="answer">
+    Assets = Capital + Liabilities<br>
+    <span class="meta" style="font-weight:normal;">左边是「有什么资源」，右边是「这些资源是谁出的钱」——同一堆东西的两种看法，所以永远相等。</span>
+  </div>
+
+  <h4>Assets（资产）</h4>
+  <table>
+    <thead>
+      <tr><th style="width:26%">类别</th><th>项目（讲义原文）</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Non-Current</strong><br><span class="meta">非流动资产</span></td>
+        <td>PPE（Property, Plant and Equipment 不动产、厂房及设备）、Intangibles（无形资产）、Financial Assets（金融资产）、Investment property（投资性房地产）、Biological（生物资产）</td>
+      </tr>
+      <tr>
+        <td><strong>Current</strong><br><span class="meta">流动资产</span></td>
+        <td>Inventory / Stock（存货）、Trade receivables（应收账款）、financial assets（金融资产）、cash at bank and cash in hand（银行存款与库存现金）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Liabilities（负债）</h4>
+  <table>
+    <thead>
+      <tr><th style="width:26%">类别</th><th>项目（讲义原文）</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Non-current</strong><br><span class="meta">非流动负债</span></td>
+        <td>Loans payable <strong>after 12 months</strong>（12 个月以后才还的借款）</td>
+      </tr>
+      <tr>
+        <td><strong>Current</strong><br><span class="meta">流动负债</span></td>
+        <td>Payables / Creditors（应付账款）、bank overdraft（银行透支）、short-term loans（短期借款）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    区分 non-current / current 的标准就是讲义写的那句 <strong>after 12 months</strong>——12 个月是分界线。
+  </div>
+
+  <h4>Capital（资本）—— 不同组织形式叫法不同</h4>
+  <table>
+    <thead>
+      <tr><th style="width:38%">组织形式</th><th>这一项叫什么</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Sole traders &amp; partnerships</strong><br><span class="meta">个体户与合伙企业</span></td>
+        <td>Capital 或 Equity</td>
+      </tr>
+      <tr>
+        <td><strong>Companies</strong><br><span class="meta">公司</span></td>
+        <td>Equity / Shareholders' funds（股东权益）</td>
+      </tr>
+      <tr>
+        <td><strong>NFPs</strong><br><span class="meta">非营利组织 Not-for-Profits</span></td>
+        <td>Accumulated Fund（累积基金）</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 contenteditable="false">4. Changes in Financial Position（财务状况的变动）</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>Changes in Financial Position during the period. How did we get here?</strong><br>
+    <span class="meta">本期财务状况发生了哪些变动？我们是怎么走到期末这个状态的？</span></p>
+  <p>讲义把变动拆成四类，每一类对应一张报表或附表：</p>
+
+  <h4>2.1 Financial Performance（经营业绩）</h4>
+  <ul>
+    <li>Changes due to <strong>incomes, expenses, gains and losses</strong>.<br>
+      <span class="meta">由收入、费用、利得、损失引起的变动。</span></li>
+    <li>Generally, transactions relating with <strong>those who are not owners</strong>（non-owners / lenders）.<br>
+      <span class="meta">一般来说，是和「非所有者」（非所有者 / 债权人）之间的交易。</span></li>
+    <li>报表：<strong>Statement of Profit or Loss (PoL)</strong> — 结果是 <strong>Surplus or deficit</strong>（盈余或亏损）。</li>
+  </ul>
+
+  <h4>2.2 Cash Flows（现金流量）</h4>
+  <ul>
+    <li>Changes due to <strong>receipts and payments of cash</strong>.<br>
+      <span class="meta">由现金的收进和付出引起的变动。</span></li>
+    <li>报表：<strong>Statement of Cash Flows (SCF)</strong>。</li>
+  </ul>
+
+  <h4>2.3 Transactions with owners（与所有者的交易）</h4>
+  <ul>
+    <li>Changes due to transactions <strong>with owners</strong>（some few gains and losses also）.<br>
+      <span class="meta">与所有者之间交易引起的变动（也含少量利得和损失）。</span></li>
+    <li>报表：<strong>Statement of Changes in Capital / Equity (SCE)</strong>。</li>
+  </ul>
+
+  <h4>2.4 Changes in other assets and liabilities（其他资产与负债的变动）</h4>
+  <ul>
+    <li>Here we prepare <strong>reconciliation statements</strong>, such as <strong>asset movement schedules</strong> for land and buildings.<br>
+      <span class="meta">这里编制的是调节表，例如土地与房屋的资产变动明细表。</span></li>
+  </ul>
+
+  <div class="note">
+    注意 2.1 和 2.3 的分界线就是<strong>交易对手是不是所有者</strong>：
+    和 non-owners 做的 → 进利润表（PoL）；和 owners 做的（如投入资本、分红）→ 进权益变动表（SCE）。
+  </div>
+
+  <h4>四类变动 → 四张表（速查）</h4>
+  <table>
+    <thead>
+      <tr><th style="width:12%">编号</th><th style="width:34%">变动来源</th><th>对应报表</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>2.1</td><td>Incomes, expenses, gains, losses<br><span class="meta">与非所有者的交易</span></td><td><strong>PoL</strong> — Statement of Profit or Loss（利润表）</td></tr>
+      <tr><td>2.2</td><td>Receipts &amp; payments of cash<br><span class="meta">现金收付</span></td><td><strong>SCF</strong> — Statement of Cash Flows（现金流量表）</td></tr>
+      <tr><td>2.3</td><td>Transactions with owners<br><span class="meta">与所有者的交易</span></td><td><strong>SCE</strong> — Statement of Changes in Equity（权益变动表）</td></tr>
+      <tr><td>2.4</td><td>Other assets &amp; liabilities<br><span class="meta">其他资产负债项目</span></td><td>Reconciliation statements / asset movement schedules（调节表、资产变动表）</td></tr>
+      <tr class="total"><td>—</td><td>期初 / 期末资源状态<br><span class="meta">静态时点</span></td><td><strong>SFP</strong> — Statement of Financial Position（财务状况表）</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 contenteditable="false">5. Who is interested? — Users（谁在关心这个故事）</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>The interested parties are called Users. They are many, so grouped into 7.</strong><br>
+    <span class="meta">关心这些信息的各方统称为「使用者（Users）」；因为人数众多，归并成 7 类。</span></p>
+
+  <div class="users-row">
+    <div class="u"><strong>Owners</strong><br><span class="meta">Sole traders, partners and shareholders<br>业主、合伙人、股东</span></div>
+    <div class="u"><strong>Employees</strong><br><span class="meta">员工</span></div>
+    <div class="u"><strong>Customers</strong><br><span class="meta">客户</span></div>
+    <div class="u"><strong>Suppliers</strong><br><span class="meta">供应商</span></div>
+    <div class="u"><strong>Lenders</strong><br><span class="meta">贷款方 / 债权人</span></div>
+    <div class="u"><strong>Government and its agencies</strong><br><span class="meta">政府及其机构</span></div>
+    <div class="u"><strong>The Public</strong><br><span class="meta">社会公众</span></div>
+  </div>
+
+  <div class="note">
+    这 7 类使用者呼应前面的 <strong>stakeholder theory</strong>；其中 Owners 一类单独对应 <strong>agency theory</strong>。
+  </div>
+</div>
+
 </div>
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-20-init-v1';
+const NOTES_VERSION = '2026-08-20-topic01-v1';
 
 function toggleEdit() {
   editMode = !editMode;
