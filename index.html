@@ -822,6 +822,104 @@
   </div>
 </div>
 
+<h3 contenteditable="false">3.5 Equity 的组成 — Share capital / Share premium / Revaluation reserve / Retained earnings</h3>
+
+<div class="box" contenteditable="false">
+  <p class="meta">承接 3.4：<em>Company</em> 的权益栏（Equity / Shareholders' funds）不是一个数，而是拆成几块列示。</p>
+
+  <div class="formula">
+    <strong>Equity</strong>　＝　Share capital　＋　Share premium　＋　Revaluation reserve　＋　Retained earnings
+  </div>
+
+  <div class="term">
+    结构上还可以再归一层：<strong>Equity ＝ Share capital ＋ Reserves</strong>。<br>
+    <span class="meta">后面三项（share premium、revaluation reserve、retained earnings）统称 <strong>reserves（储备）</strong>；只有 share capital 不是 reserve。</span>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th style="width:26%">组成部分</th><th>是什么</th><th style="width:24%">从哪来</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Share capital</strong><span class="cn">股本</span></td>
+        <td>已发行股份按<strong>面值（nominal / par value）</strong>计算的总额。<br>
+          <span class="meta">面值是章程定的一个名义数字，和股票值多少钱没关系。</span></td>
+        <td>发行股份<span class="cn">与所有者的交易 → SCE</span></td>
+      </tr>
+      <tr>
+        <td><strong>Share premium</strong><span class="cn">股本溢价</span></td>
+        <td>发行价<strong>超过面值</strong>的那部分。<br>
+          <span class="meta">股东多掏的钱，同样是股东投进来的资本，只是不计入 share capital。</span></td>
+        <td>发行股份<span class="cn">与所有者的交易 → SCE</span></td>
+      </tr>
+      <tr>
+        <td><strong>Revaluation reserve</strong><span class="cn">重估储备</span></td>
+        <td>非流动资产（典型如土地、房屋）<strong>重估增值</strong>累积起来的部分。<br>
+          <span class="meta">资产升值了，但还没卖掉——账面调高，对应的增值挂在这里。</span></td>
+        <td><strong>OCI</strong><span class="cn">不经过利润表</span></td>
+      </tr>
+      <tr>
+        <td><strong>Retained earnings</strong><span class="cn">留存收益</span></td>
+        <td>历年赚的利润<strong>累积下来、还没分掉</strong>的部分。<br>
+          <span class="meta">期初留存 ＋ 本年利润 − 本年分红 ＝ 期末留存。</span></td>
+        <td>利润表 &amp; 分红<span class="cn">PoL → SCE</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 contenteditable="false">Share capital vs Share premium — 一个例子就清楚</h4>
+
+  <div class="box" style="background:#f7fafc;">
+    <p>某公司发行 <strong>1,000 股</strong>，每股<strong>面值 10 先令</strong>，实际<strong>发行价 25 先令</strong>：</p>
+    <table>
+      <thead><tr><th>项目</th><th>计算</th><th class="num">金额（KShs）</th></tr></thead>
+      <tbody>
+        <tr><td>Share capital<span class="cn">按面值</span></td><td>1,000 股 × 10</td><td class="num">10,000</td></tr>
+        <tr><td>Share premium<span class="cn">超过面值的部分</span></td><td>1,000 股 × (25 − 10)</td><td class="num">15,000</td></tr>
+        <tr class="total"><td>股东实际投入的钱</td><td>1,000 股 × 25</td><td class="num">25,000</td></tr>
+      </tbody>
+    </table>
+    <div class="answer">
+      两项加起来才是股东真正掏的钱。拆成两栏只是法律和会计上的要求，不是两笔不同的钱。
+    </div>
+  </div>
+
+  <h4 contenteditable="false">四项分别经过哪张表进来</h4>
+
+  <div class="flow">
+    <div class="fcols two">
+      <div><strong>Share capital ＋ Share premium</strong><span class="cn">发行新股 = 与所有者的交易<br>→ 讲义 2.3 → SCE</span></div>
+      <div><strong>Revaluation reserve</strong><span class="cn">资产重估增值<br>→ 走 OCI，不进利润表</span></div>
+    </div>
+    <div class="farrow">↓ 都汇总进 Equity ↓</div>
+    <div class="fstep"><strong>Retained earnings</strong><span class="cn">本年利润（讲义 2.1 → PoL）减去分红（讲义 2.3 → SCE）后的累积</span></div>
+  </div>
+
+  <div class="term">
+    <strong>可分配 vs 不可分配（考点）</strong>
+    <ul>
+      <li><strong>Retained earnings</strong> — <span style="color:#38a169;">可分配</span>，这是发放现金股息的来源。</li>
+      <li><strong>Share premium</strong> — <span style="color:#c53030;">不可分配</span>，法定储备，不能拿来发股息。</li>
+      <li><strong>Revaluation reserve</strong> — <span style="color:#c53030;">不可分配</span>，因为这笔增值<strong>还没实现（unrealised）</strong>——资产还没卖，钱还没到手。<br>
+        <span class="meta">等资产真的卖掉、增值变现了，这部分才会转到 retained earnings 里去。</span></li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <strong>接回真实报表：</strong>TotalEnergies 2025 年 EQUITY 栏只有三项——<br>
+    Share capital 9,974,771 ＋ Share premium 1,967,520 ＋ Retained earnings 21,727,252 ＝ <strong>33,669,543</strong> ✓<br>
+    <strong>没有 Revaluation reserve 这一栏</strong>，通常意味着该公司的 PPE 采用<strong>成本模式（cost model）</strong>而非重估模式——
+    资产按成本减折旧列示，不做重估，自然就没有重估储备。
+  </div>
+
+  <div class="note">
+    再回看之前算过的：留存收益从 20,765,093 涨到 21,727,252，只增加了 962,159，
+    但本年利润有 2,170,860——差额 <strong>1,208,701</strong> 就是分掉的股息。
+    这正是上表 <em>Retained earnings</em> 那一行「期初 ＋ 利润 − 分红 ＝ 期末」的实际演算。
+  </div>
+</div>
+
 <h3 contenteditable="false">4. Changes in Financial Position（财务状况的变动）</h3>
 
 <div class="box" contenteditable="false">
@@ -1158,7 +1256,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-24-entity-types-v1';
+const NOTES_VERSION = '2026-08-24-equity-components-v1';
 
 function toggleEdit() {
   editMode = !editMode;
