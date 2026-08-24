@@ -492,6 +492,65 @@
   </table>
 </div>
 
+<h3 contenteditable="false">3.1 Stock ↔ Inventory（存货的四个类别）</h3>
+
+<div class="box" contenteditable="false">
+  <div class="term">
+    <strong>Stock ↔ Inventory</strong> — 同一样东西的两个名字，可以互换使用。<br>
+    <span class="meta">Stock 偏英式用法，Inventory 偏美式用法；IFRS 报表上正式列示时写 <strong>Inventories</strong>。讲义 SFP 的流动资产第一行写的就是 "Inventory/Stock"。</span>
+  </div>
+
+  <p>存货按<strong>所处的生产阶段</strong>分成四类：</p>
+
+  <table>
+    <thead>
+      <tr><th style="width:8%">#</th><th style="width:36%">类别</th><th>说明</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><strong>Raw materials</strong><span class="cn">原材料</span></td>
+        <td>买进来、还没投入生产的投入品——生产链条的起点。</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><strong>WIP</strong> — Work in Progress<span class="cn">在产品 / 在制品</span></td>
+        <td>已经投产、但还没完工的半成品——卡在生产线中间的那部分。</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><strong>Finished goods</strong><span class="cn">产成品</span></td>
+        <td>已完工、等着出售的成品。</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td><strong>Consumables</strong><span class="cn">消耗品 / 辅助材料</span></td>
+        <td>生产经营中会用掉、但不构成产品实体的物料（如润滑油、包装材料、办公耗材）。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="flow">
+    <div class="fcols three">
+      <div><strong>1. Raw materials</strong><span class="cn">原材料</span></div>
+      <div><strong>2. WIP</strong><span class="cn">在产品</span></div>
+      <div><strong>3. Finished goods</strong><span class="cn">产成品</span></div>
+    </div>
+    <div class="farrow">前三类是同一批货在生产链条上的三个阶段：投入 → 在制 → 完工</div>
+    <div class="fstep">4. <strong>Consumables</strong> — 不在这条链上，是辅助生产/经营被消耗掉的物料<span class="cn">消耗品</span></div>
+  </div>
+
+  <div class="note">
+    <strong>待确认：</strong>课上记下的是「WTP」，按会计通用术语应是 <strong>WIP = Work in Progress</strong>（在产品）。
+    如果老师讲的确实是别的词，告诉我改回来。
+  </div>
+
+  <div class="note">
+    <strong>接回真实报表：</strong>TotalEnergies 2025 年 SFP 上 <em>Inventories</em> 一行是 <strong>10,331,995</strong>（KShs'000），
+    约占流动资产的 20%。附注 <strong>Note 17</strong> 通常就会按上面这几类把它拆开列示。
+  </div>
+</div>
+
 <h3 contenteditable="false">4. Changes in Financial Position（财务状况的变动）</h3>
 
 <div class="box" contenteditable="false">
@@ -828,7 +887,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-24-totalenergies-case-v1';
+const NOTES_VERSION = '2026-08-24-inventory-classes-v1';
 
 function toggleEdit() {
   editMode = !editMode;
