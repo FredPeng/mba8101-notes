@@ -44,6 +44,20 @@
   tr.total { background: #fefcbf; font-weight: bold; }
   tr.subtotal { background: #f7fafc; font-weight: 600; }
   td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  /* 财务报表表格 */
+  tr.sect th, tr.sect td {
+    background: #2c5282;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+  }
+  tr.grand td { background: #fefcbf; font-weight: bold; border-top: 3px double #2c5282; }
+  td.neg { color: #c53030; }
+  .unsure {
+    border-bottom: 2px dotted #d69e2e;
+    background: #fffbea;
+    cursor: help;
+  }
   .box {
     background: #fff;
     border: 1px solid #e2e8f0;
@@ -138,6 +152,7 @@
   .eq .op { align-self: center; font-size: 1.3em; color: #2c5282; font-weight: bold; }
   .eq .cn { display: block; color: #718096; font-size: 0.82em; font-weight: normal; }
   .ch { color: #718096; font-size: 0.85em; font-style: italic; margin-left: 4px; }
+  .cn { display: block; color: #718096; font-size: 0.82em; font-weight: normal; }
   /* 流程 / 结构图 */
   .flow { margin: 14px 0; }
   .flow .fstep {
@@ -554,11 +569,266 @@
   </div>
 </div>
 
+
+<h2 contenteditable="false">案例 — TotalEnergies Marketing Kenya PLC 真实报表（对照 Topic 1）</h2>
+
+<p class="meta" contenteditable="false">
+  年报 p.140–141 · Statement of Financial Position as at 31<sup>st</sup> December 2025 与
+  Statement of Profit or Loss and Other Comprehensive Income for the year ended 31<sup>st</sup> December 2025 ·
+  单位 <strong>KShs'000</strong>（肯尼亚先令，千元）
+</p>
+
+<div class="note" contenteditable="false">
+  <strong>数字来源说明：</strong>本节数字由课件照片转录。照片有部分模糊，我用「各分项必须合计得上小计、小计合计得上总计」逐栏做了交叉验算——
+  绝大多数已验算通过；<span class="unsure">带黄色虚线底纹</span>的几个数字是照片读不准、需要你对照纸质版核对的，详见本节末「核对清单」。
+</div>
+
+<h3 contenteditable="false">案例 A · Statement of Financial Position（SFP，财务状况表）</h3>
+
+<div class="box" contenteditable="false">
+  <p class="meta">这就是讲义里 <strong>1. Financial Position</strong> 的实物：左边一栏一栏列出资源，右边两栏是 2025 / 2024 两个时点（<em>as at the end and as at the beginning</em>）。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:44%">ASSETS（资产）</th>
+        <th style="width:10%">Notes</th>
+        <th class="num">2025</th>
+        <th class="num">2024</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="sect"><td colspan="4">NON-CURRENT ASSETS（非流动资产）</td></tr>
+      <tr><td>Property, plant and equipment<span class="cn">不动产、厂房及设备</span></td><td>12</td><td class="num">13,450,101</td><td class="num">12,811,963</td></tr>
+      <tr><td>Right-of-use assets<span class="cn">使用权资产（租赁）</span></td><td>13</td><td class="num">3,300,025</td><td class="num">1,817,970</td></tr>
+      <tr><td>Goodwill<span class="cn">商誉</span></td><td>14</td><td class="num">416,679</td><td class="num">416,679</td></tr>
+      <tr><td>Intangible assets<span class="cn">无形资产</span></td><td>15</td><td class="num">238,803</td><td class="num">296,876</td></tr>
+      <tr><td>Deferred tax assets<span class="cn">递延所得税资产</span></td><td>16</td><td class="num">579,245</td><td class="num">689,478</td></tr>
+      <tr class="subtotal"><td>Total non-current assets</td><td></td><td class="num">17,984,853</td><td class="num">16,032,966</td></tr>
+
+      <tr class="sect"><td colspan="4">CURRENT ASSETS（流动资产）</td></tr>
+      <tr><td>Inventories<span class="cn">存货</span></td><td>17</td><td class="num">10,331,995</td><td class="num">11,068,262</td></tr>
+      <tr><td>Tax recoverable<span class="cn">可退回税款</span></td><td>9(a)</td><td class="num">–</td><td class="num">656,966</td></tr>
+      <tr><td>Trade and other receivables<span class="cn">应收账款及其他应收款</span></td><td>18</td><td class="num">25,087,856</td><td class="num">25,500,796</td></tr>
+      <tr><td>Amounts due from related companies<span class="cn">应收关联公司款项</span></td><td>19(i)</td><td class="num">2,341,797</td><td class="num">3,235,303</td></tr>
+      <tr><td>Cash and bank balances<span class="cn">现金及银行存款</span></td><td>23(b)</td><td class="num">13,441,713</td><td class="num"><span class="unsure" title="照片模糊，本栏分项合计与小计差 10,100，待核对">11,427,183</span></td></tr>
+      <tr class="subtotal"><td>Total current assets</td><td></td><td class="num">51,203,361</td><td class="num">51,898,610</td></tr>
+      <tr class="grand"><td>TOTAL ASSETS</td><td></td><td class="num">69,188,214</td><td class="num">67,931,576</td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:44%">EQUITY AND LIABILITIES（权益与负债）</th>
+        <th style="width:10%">Notes</th>
+        <th class="num">2025</th>
+        <th class="num">2024</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="sect"><td colspan="4">EQUITY（权益）</td></tr>
+      <tr><td>Share capital<span class="cn">股本</span></td><td>20</td><td class="num">9,974,771</td><td class="num">9,974,771</td></tr>
+      <tr><td>Share premium<span class="cn">股本溢价</span></td><td>21</td><td class="num">1,967,520</td><td class="num">1,967,520</td></tr>
+      <tr><td>Retained earnings<span class="cn">留存收益</span></td><td></td><td class="num">21,727,252</td><td class="num">20,765,093</td></tr>
+      <tr class="subtotal"><td>Total equity</td><td></td><td class="num">33,669,543</td><td class="num">32,707,384</td></tr>
+
+      <tr class="sect"><td colspan="4">NON-CURRENT LIABILITIES（非流动负债）</td></tr>
+      <tr><td>Trade and other payables<span class="cn">应付账款及其他应付款</span></td><td>22</td><td class="num">1,061,729</td><td class="num">949,408</td></tr>
+      <tr><td>Lease liability<span class="cn">租赁负债</span></td><td>13</td><td class="num">2,212,196</td><td class="num">1,200,900</td></tr>
+      <tr><td>Provisions<span class="cn">预计负债</span></td><td>22</td><td class="num">346,849</td><td class="num">243,160</td></tr>
+      <tr class="subtotal"><td>Total non-current liabilities</td><td></td><td class="num">3,620,774</td><td class="num">2,393,468</td></tr>
+
+      <tr class="sect"><td colspan="4">CURRENT LIABILITIES（流动负债）</td></tr>
+      <tr><td>Lease liability<span class="cn">租赁负债（一年内）</span></td><td>13</td><td class="num">432,874</td><td class="num">287,189</td></tr>
+      <tr><td>Trade and other payables<span class="cn">应付账款及其他应付款</span></td><td>22</td><td class="num">29,405,747</td><td class="num"><span class="unsure" title="照片模糊，本栏分项合计与小计差 80,000，待核对">29,437,441</span></td></tr>
+      <tr><td>Tax payable<span class="cn">应交税费</span></td><td>9(a)</td><td class="num">187,410</td><td class="num">–</td></tr>
+      <tr><td>Amounts due to holding company<span class="cn">应付母公司款项</span></td><td>19(ii)</td><td class="num">1,235,553</td><td class="num"><span class="unsure" title="照片模糊，本栏分项合计与小计差 80,000，待核对">2,770,238</span></td></tr>
+      <tr><td>Amounts due to related companies<span class="cn">应付关联公司款项</span></td><td>19(ii)</td><td class="num">636,313</td><td class="num">415,856</td></tr>
+      <tr class="subtotal"><td>Total current liabilities</td><td></td><td class="num">31,897,897</td><td class="num">32,830,724</td></tr>
+      <tr class="grand"><td>TOTAL EQUITY AND LIABILITIES</td><td></td><td class="num">69,188,214</td><td class="num">67,931,576</td></tr>
+    </tbody>
+  </table>
+
+  <p class="meta">报表由董事会于 2026 年 4 月 23 日批准发布，Director – Thibault Flichy 与 Director – Lawrence Gichatha 代表签署。</p>
+</div>
+
+<h3 contenteditable="false">案例 B · 用真实数字验证会计恒等式</h3>
+
+<div class="box" contenteditable="false">
+  <p>讲义写的是 <strong>Assets = Capital + Liabilities</strong>。拿 2025 年的数字直接代进去（KShs'000）：</p>
+
+  <div class="eq">
+    <div class="part hl">Assets<br><strong>69,188,214</strong><span class="cn">资产总额</span></div>
+    <div class="op">=</div>
+    <div class="part">Capital<br><strong>33,669,543</strong><span class="cn">所有者出的</span></div>
+    <div class="op">+</div>
+    <div class="part">Liabilities<br><strong>35,518,671</strong><span class="cn">非所有者出的</span></div>
+  </div>
+
+  <div class="formula">
+    Liabilities = 非流动 3,620,774 + 流动 31,897,897 = <strong>35,518,671</strong><br>
+    33,669,543 + 35,518,671 = <strong>69,188,214</strong> ＝ TOTAL ASSETS ✓
+  </div>
+
+  <div class="answer">
+    两边严丝合缝相等 —— 这不是巧合，是复式记账的必然结果。<br>
+    <span class="meta" style="font-weight:normal;">报表上「TOTAL ASSETS」和「TOTAL EQUITY AND LIABILITIES」印出来一定是同一个数，不等就是账错了。</span>
+  </div>
+
+  <p><strong>这家公司的资源是谁出的钱？</strong></p>
+  <table>
+    <thead><tr><th>出资方</th><th class="num">2025 金额</th><th class="num">占资产比重</th></tr></thead>
+    <tbody>
+      <tr><td>Owners（股东）— Capital / Equity</td><td class="num">33,669,543</td><td class="num">48.7%</td></tr>
+      <tr><td>Non-owners（债权人等）— Liabilities</td><td class="num">35,518,671</td><td class="num">51.3%</td></tr>
+      <tr class="total"><td>Total resources = Assets</td><td class="num">69,188,214</td><td class="num">100%</td></tr>
+    </tbody>
+  </table>
+  <div class="note">
+    对照讲义 <strong>Capital</strong> 那一栏：这是一家 <em>Company</em>，所以权益栏叫 <strong>Equity / Shareholders' funds</strong>，
+    并且细分成 Share capital + Share premium + Retained earnings —— 不是个体户那种一行 "Capital"，也不是 NFP 的 Accumulated Fund。
+  </div>
+</div>
+
+<h3 contenteditable="false">案例 C · Statement of Profit or Loss and OCI（PoL，利润表）</h3>
+
+<div class="box" contenteditable="false">
+  <p class="meta">对应讲义 <strong>2.1 Financial Performance</strong>：由 incomes、expenses、gains、losses 引起的变动，且基本都是和 <em>non-owners</em> 之间的交易。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width:46%">项目</th>
+        <th style="width:10%">Notes</th>
+        <th class="num">2025</th>
+        <th class="num">2024</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Revenue from contracts with customers<span class="cn">客户合同收入</span></td><td></td><td class="num">143,940,451</td><td class="num">151,487,720</td></tr>
+      <tr><td>Indirect taxes and duties<span class="cn">间接税与关税</span></td><td></td><td class="num neg">(39,921,094)</td><td class="num neg">(37,274,805)</td></tr>
+      <tr class="subtotal"><td>Net revenue from contracts with customers<span class="cn">净收入</span></td><td>5</td><td class="num">104,019,357</td><td class="num">114,212,915</td></tr>
+      <tr><td>Cost of sales<span class="cn">销售成本</span></td><td>4</td><td class="num neg">(92,041,543)</td><td class="num neg">(105,219,189)</td></tr>
+      <tr class="subtotal"><td>Gross profit<span class="cn">毛利</span></td><td></td><td class="num">11,977,814</td><td class="num">8,993,726</td></tr>
+      <tr><td>Other income<span class="cn">其他收入</span></td><td>5</td><td class="num"><span class="unsure" title="照片模糊，中段各行合计与 PBT 对不平，待核对">1,771,746</span></td><td class="num"><span class="unsure" title="照片模糊，待核对">2,796,404</span></td></tr>
+      <tr><td>Operating expenses<span class="cn">经营费用</span></td><td>6(a)</td><td class="num neg"><span class="unsure" title="照片模糊，待核对">(8,723,028)</span></td><td class="num neg"><span class="unsure" title="照片模糊，待核对">(7,366,215)</span></td></tr>
+      <tr><td>Net allowance for expected credit losses<span class="cn">预期信用损失准备净额</span></td><td>6(b)</td><td class="num"><span class="unsure" title="照片模糊，待核对">179,405</span></td><td class="num neg"><span class="unsure" title="照片模糊，待核对">(475,695)</span></td></tr>
+      <tr><td>Net loss on disposal of government securities at FVOCI<span class="cn">处置以公允价值计量且变动计入其他综合收益的政府债券净损失</span></td><td>6(c)</td><td class="num">–</td><td class="num neg"><span class="unsure" title="照片模糊，待核对">(222,285)</span></td></tr>
+      <tr><td>Finance income<span class="cn">财务收入</span></td><td>7(a)</td><td class="num"><span class="unsure" title="照片模糊，待核对">353,487</span></td><td class="num"><span class="unsure" title="照片模糊，待核对">234,214</span></td></tr>
+      <tr><td>Finance costs<span class="cn">财务费用</span></td><td>7(b)</td><td class="num neg"><span class="unsure" title="照片模糊，待核对">(1,699,175)</span></td><td class="num neg"><span class="unsure" title="照片模糊，待核对">(3,890,465)</span></td></tr>
+      <tr><td>Net foreign exchange (loss)/gain<span class="cn">汇兑净（损失）/ 收益</span></td><td>7(c)</td><td class="num neg"><span class="unsure" title="照片模糊，待核对">(156)</span></td><td class="num"><span class="unsure" title="照片模糊，待核对">2,073,802</span></td></tr>
+      <tr class="subtotal"><td>Profit before tax<span class="cn">税前利润</span></td><td>8</td><td class="num">3,867,050</td><td class="num">2,063,131</td></tr>
+      <tr><td>Tax charge<span class="cn">所得税费用</span></td><td>9(i)</td><td class="num neg">(1,696,190)</td><td class="num neg">(575,698)</td></tr>
+      <tr class="total"><td>Profit for the year<span class="cn">本年利润</span></td><td></td><td class="num">2,170,860</td><td class="num">1,487,433</td></tr>
+
+      <tr class="sect"><td colspan="4">OTHER COMPREHENSIVE INCOME / (LOSS)（其他综合收益）— items that may be reclassified subsequently to profit or loss</td></tr>
+      <tr><td>Net fair value loss on remeasurement of government securities through OCI<span class="cn">政府债券重新计量的公允价值变动</span></td><td></td><td class="num">–</td><td class="num">393,169</td></tr>
+      <tr><td>Changes in allowance for expected credit losses<span class="cn">预期信用损失准备变动</span></td><td>9(b)</td><td class="num">–</td><td class="num neg">(189,520)</td></tr>
+      <tr class="subtotal"><td>Other comprehensive income, net of tax<span class="cn">其他综合收益（税后）</span></td><td></td><td class="num">–</td><td class="num">203,649</td></tr>
+      <tr class="grand"><td>Total comprehensive income for the year<span class="cn">本年综合收益总额</span></td><td></td><td class="num">2,170,860</td><td class="num">1,691,082</td></tr>
+      <tr><td>Earnings per share (basic and diluted)<span class="cn">每股收益（基本及稀释），单位 KShs</span></td><td>10</td><td class="num">3.45</td><td class="num">2.36</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    照片上 OCI 部分还印有 <em>Reclassification to profit or loss</em>、<em>Related deferred tax</em>、
+    <em>Movement in expected credit loss on government securities at FVOCI</em> 几行标题，但金额栏是空白或看不清，
+    上表只保留了有数字的行。
+  </div>
+
+  <div class="term">
+    <strong>Profit ≠ Total comprehensive income。</strong>
+    2024 年 Profit 是 1,487,433，但 Total comprehensive income 是 1,691,082，中间差的 203,649 就是 OCI——
+    那些「不走利润表、直接进权益」的价值变动。2025 年没有 OCI，所以两个数字相同。
+  </div>
+</div>
+
+<h3 contenteditable="false">案例 D · 把 Topic 1 的框架对到这两张表上</h3>
+
+<div class="box" contenteditable="false">
+  <table>
+    <thead>
+      <tr><th style="width:34%">讲义里的概念</th><th>这份年报里的实物</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>1. Financial Position</strong><br><span class="meta">期末、期初的资源状态</span></td>
+          <td>SFP 的两栏：<strong>2025</strong>（期末）与 <strong>2024</strong>（期初）并排列示，一眼看出一年间的变化。</td></tr>
+      <tr><td><strong>Assets = Capital + Liabilities</strong></td>
+          <td>69,188,214 = 33,669,543 + 35,518,671 ✓（见案例 B）</td></tr>
+      <tr><td><strong>Non-current vs Current</strong><br><span class="meta">12 个月为界</span></td>
+          <td>资产、负债都严格分成两段列示；Lease liability 甚至同一笔租赁被拆成 non-current 2,212,196 与 current 432,874 两行。</td></tr>
+      <tr><td><strong>Capital 的叫法</strong><br><span class="meta">公司 → Equity / Shareholders' funds</span></td>
+          <td>标题就写 <em>EQUITY</em>，下分 Share capital / Share premium / Retained earnings。</td></tr>
+      <tr><td><strong>2.1 Financial Performance</strong><br><span class="meta">与 non-owners 的交易</span></td>
+          <td>PoL：客户（Revenue）、供应商（Cost of sales）、贷款方（Finance costs）——全是非所有者。结果 Profit 2,170,860。</td></tr>
+      <tr><td><strong>2.2 Cash Flows</strong></td>
+          <td>SCF 在年报另一页；SFP 上 Cash and bank balances 从 11,427,183 变到 13,441,713，这个变动的来龙去脉就是 SCF 要解释的。</td></tr>
+      <tr><td><strong>2.3 Transactions with owners</strong></td>
+          <td>SCE 在年报另一页；本页可反推出来（见下）。</td></tr>
+      <tr><td><strong>2.4 Other assets &amp; liabilities</strong><br><span class="meta">reconciliation / movement schedules</span></td>
+          <td>SFP 每行后面的 <strong>Notes 12–23</strong> 就是那些附表，例如 Note 12 会给出 PPE 从 12,811,963 到 13,450,101 的完整变动明细。</td></tr>
+    </tbody>
+  </table>
+
+  <h4>从两张表反推 2.3「与所有者的交易」</h4>
+  <div class="formula">
+    期初 Retained earnings　20,765,093<br>
+    ＋ 本年 Profit　　　　　　2,170,860<br>
+    − 期末 Retained earnings　21,727,252<br>
+    ＝ <strong>1,208,701</strong>　← 本年分配给股东的金额（主要是股息）
+  </div>
+  <div class="note">
+    这是<strong>我从两张表反推的</strong>（讲义和照片上没有直接给），实际金额要看年报里的 SCE 和股息附注核实。<br>
+    但推理本身就是讲义那句话的最好演示：留存收益的变动 = 与非所有者交易的结果（Profit，走 PoL）＋ 与所有者交易的结果（分红，走 SCE）。
+  </div>
+</div>
+
+<h3 contenteditable="false">案例 E · 核对清单（照片读不准的数字）</h3>
+
+<div class="box" contenteditable="false">
+  <p>下面几行的分项加总与报表印出的小计对不上，说明我从照片上至少读错了一位数字。<strong>请对着纸质版核对后告诉我正确值，我改过来。</strong></p>
+
+  <table>
+    <thead><tr><th style="width:34%">位置</th><th style="width:22%">差额</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>SFP · <strong>2024 年流动资产</strong></td>
+        <td class="num">分项少 10,100</td>
+        <td>五个分项加起来 51,888,510，但小计印的是 51,898,610。嫌疑最大的是 <strong>Cash and bank balances 11,427,183</strong>。</td>
+      </tr>
+      <tr>
+        <td>SFP · <strong>2024 年流动负债</strong></td>
+        <td class="num">分项多 80,000</td>
+        <td>四个分项加起来 32,910,724，但小计印的是 32,830,724。嫌疑在 <strong>Trade and other payables 29,437,441</strong> 或 <strong>Amounts due to holding company 2,770,238</strong>。</td>
+      </tr>
+      <tr>
+        <td>PoL · <strong>中段各行（Other income 到 FX）</strong></td>
+        <td class="num">两栏都对不平</td>
+        <td>毛利往下加减到 Profit before tax 合不上（2025 差约 7 千、2024 差约 8 万）。这一段行距密、字小，整段都标了待核对。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="answer">
+    已验算通过、可以放心用的数字：<br>
+    <span class="meta" style="font-weight:normal;">
+      SFP 两年的全部小计与总计、2025 年所有分项、2024 年的非流动资产/权益/非流动负债各分项；
+      PoL 的 Revenue、Indirect taxes、Net revenue、Cost of sales、Gross profit、Profit before tax、Tax charge、Profit for the year、OCI 与 Total comprehensive income、EPS。
+    </span>
+  </div>
+
+  <div class="term">
+    <strong>顺带学到的方法：</strong>拿到任何一份报表，先做 <em>footing</em>（纵向加总核对）和 <em>cross-casting</em>（横向核对）——
+    分项要加得出小计、小计要加得出总计、资产总额要等于权益负债总额。对不上，就是有数字错了。这是审计和考试里最基本的自查动作。
+  </div>
+</div>
+
 </div>
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-20-topic01-v1';
+const NOTES_VERSION = '2026-08-24-totalenergies-case-v1';
 
 function toggleEdit() {
   editMode = !editMode;
