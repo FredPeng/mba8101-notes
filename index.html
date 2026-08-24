@@ -611,6 +611,49 @@
   </div>
 </div>
 
+<h3 contenteditable="false">3.3 Cash and bank balances（现金及银行存款）</h3>
+
+<div class="box" contenteditable="false">
+  <p class="meta">SFP 流动资产的最后一行。讲义原文写的就是 <em>"cash at bank and cash in hand"</em>——这一行由两部分组成：</p>
+
+  <div class="formula">
+    <strong>Cash and bank balances</strong>　＝　Cash at the bank　＋　Cash in hand
+  </div>
+
+  <table>
+    <thead>
+      <tr><th style="width:32%">组成部分</th><th>含义</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Cash at the bank</strong><span class="cn">银行存款</span></td>
+        <td>存在<strong>银行账户</strong>里的钱——往来账户 / 活期账户的余额。看银行对账单，不是实物。</td>
+      </tr>
+      <tr>
+        <td><strong>Cash in hand</strong><span class="cn">库存现金</span></td>
+        <td>公司<strong>自己保管的实物现金</strong>——保险柜里的钱、收银台的备用金（petty cash）。可以点数点出来。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="term">
+    分界线是<strong>钱放在谁那里</strong>：在银行手上 → cash at bank；在公司自己手上 → cash in hand。两者都是现金，合起来列成 SFP 上的一行。
+  </div>
+
+  <div class="note">
+    <strong>反过来的情况：Bank overdraft（银行透支）。</strong><br>
+    银行账户余额如果是<u>负</u>的，那就不是资产而是<strong>欠银行的钱</strong>——所以它不放在这里，
+    而是列到<strong>流动负债</strong>去（见讲义 Liabilities → current：Payables/Creditors、<em>bank overdraft</em>、short-term loans）。
+  </div>
+
+  <div class="note">
+    <strong>接回真实报表：</strong>TotalEnergies 2025 年 <em>Cash and bank balances</em> = 13,441,713（KShs'000，附注 23(b)），
+    2024 年为 <span class="unsure" title="照片模糊，待核对">11,427,183</span>。<br>
+    另外留意报表上流动资产的<strong>排列顺序</strong>：Inventories → Trade receivables → Amounts due from related companies → Cash，
+    是按<strong>变现能力由弱到强</strong>排的，现金最容易变现所以排在最后。
+  </div>
+</div>
+
 <h3 contenteditable="false">4. Changes in Financial Position（财务状况的变动）</h3>
 
 <div class="box" contenteditable="false">
@@ -947,7 +990,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-24-receivables-ecl-v1';
+const NOTES_VERSION = '2026-08-24-cash-v1';
 
 function toggleEdit() {
   editMode = !editMode;
