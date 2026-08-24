@@ -611,7 +611,7 @@
   </div>
 </div>
 
-<h3 contenteditable="false">3.3 Cash and bank balances（现金及银行存款）</h3>
+<h3 contenteditable="false">3.3 Cash and bank balances / Cash equivalents（现金、银行存款与现金等价物）</h3>
 
 <div class="box" contenteditable="false">
   <p class="meta">SFP 流动资产的最后一行。讲义原文写的就是 <em>"cash at bank and cash in hand"</em>——这一行由两部分组成：</p>
@@ -638,6 +638,67 @@
 
   <div class="term">
     分界线是<strong>钱放在谁那里</strong>：在银行手上 → cash at bank；在公司自己手上 → cash in hand。两者都是现金，合起来列成 SFP 上的一行。
+  </div>
+
+  <h4 contenteditable="false">Cash equivalents（现金等价物）</h4>
+
+  <p>比现金再往外扩一圈：有些短期投资虽然不是现金，但<strong>随时能变成确定金额的现金、且几乎不会贬值</strong>，
+    会计上把它们和现金放在一起看，合称 <strong>Cash and cash equivalents</strong>。</p>
+
+  <div class="term">
+    判断一项东西算不算 cash equivalent，看四条（IAS 7）：
+    <ul>
+      <li><strong>Short-term</strong> — 期限很短，通常是<strong>取得日起 3 个月以内</strong>到期。<br>
+        <span class="meta">注意：是从「买进来那天」算 3 个月，不是从资产负债表日算。一张一年期国债剩最后两个月，也<u>不</u>算现金等价物。</span></li>
+      <li><strong>Highly liquid</strong> — 高度流动，说变现就能变现。</li>
+      <li><strong>Readily convertible to a known amount of cash</strong> — 能换回<strong>金额确定</strong>的现金，不是"大概能卖多少"。</li>
+      <li><strong>Insignificant risk of changes in value</strong> — 价值波动风险极小。</li>
+    </ul>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th style="width:50%">✅ 通常算 cash equivalent</th><th>❌ 通常不算</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <ul style="margin:0;padding-left:18px;">
+            <li>91 天期国库券（Treasury bills）</li>
+            <li>3 个月内到期的定期存款 / 短期存款</li>
+            <li>货币市场基金（Money market funds）</li>
+            <li>短期商业票据（Commercial paper）</li>
+          </ul>
+        </td>
+        <td>
+          <ul style="margin:0;padding-left:18px;">
+            <li><strong>股票投资</strong>——价格天天变，不满足"价值波动极小"</li>
+            <li>长期债券、定期存款（超过 3 个月）</li>
+            <li>为<strong>赚投资收益</strong>而持有的金融资产<br>
+              <span class="meta">持有目的必须是「应付短期现金需要」，不是投资赚钱</span></li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="answer">
+    持有目的是关键：cash equivalents 是<strong>拿来周转、应付短期付款</strong>的，不是拿来投资增值的。<br>
+    <span class="meta" style="font-weight:normal;">同一张 91 天国库券，公司拿它当"临时存钱的地方"就算；拿它当投资组合的一部分长期滚动持有，就要另作判断。</span>
+  </div>
+
+  <div class="note">
+    <strong>为什么这个概念重要 —— 它是 SCF 的主角。</strong><br>
+    讲义 <strong>2.2 Cash Flows</strong> 那张 <em>Statement of Cash Flows</em>，要解释的正是
+    <strong>Cash and cash equivalents</strong> 这一整块在本期是怎么增减的。所以先把"哪些东西算在这一块里"界定清楚，SCF 才有边界。
+  </div>
+
+  <div class="note">
+    <strong>一个容易考的例外：Bank overdraft 的两副面孔。</strong><br>
+    在 <strong>SFP</strong> 上，随时要还的银行透支列在<strong>流动负债</strong>（前面刚记过）；<br>
+    但在 <strong>SCF</strong> 上，如果透支是<em>随时可偿还（repayable on demand）</em>、且构成公司现金管理的一部分，
+    IAS 7 允许把它当作 cash and cash equivalents 的一个<strong>负数组成部分</strong>。<br>
+    <span class="meta">同一笔透支，在两张表上的处理不一样——因为两张表问的问题不同：SFP 问"欠不欠钱"，SCF 问"手上能动用的钱有多少"。</span>
   </div>
 
   <div class="note">
@@ -990,7 +1051,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-24-cash-v1';
+const NOTES_VERSION = '2026-08-24-cash-equivalents-v1';
 
 function toggleEdit() {
   editMode = !editMode;
