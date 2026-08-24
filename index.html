@@ -520,7 +520,7 @@
       <tr>
         <td>3</td>
         <td><strong>Finished goods</strong><span class="cn">产成品</span></td>
-        <td>已完工、等着出售的成品。</td>
+        <td><strong>Completed units</strong> — 已完工、等着出售的成品。<span class="cn">课上原话：completed units（完工的单位/件数）。</span></td>
       </tr>
       <tr>
         <td>4</td>
@@ -534,7 +534,7 @@
     <div class="fcols three">
       <div><strong>1. Raw materials</strong><span class="cn">原材料</span></div>
       <div><strong>2. WIP</strong><span class="cn">在产品</span></div>
-      <div><strong>3. Finished goods</strong><span class="cn">产成品</span></div>
+      <div><strong>3. Finished goods</strong><span class="cn">产成品 = completed units</span></div>
     </div>
     <div class="farrow">前三类是同一批货在生产链条上的三个阶段：投入 → 在制 → 完工</div>
     <div class="fstep">4. <strong>Consumables</strong> — 不在这条链上，是辅助生产/经营被消耗掉的物料<span class="cn">消耗品</span></div>
@@ -887,7 +887,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-24-inventory-classes-v1';
+const NOTES_VERSION = '2026-08-24-inventory-classes-v2';
 
 function toggleEdit() {
   editMode = !editMode;
