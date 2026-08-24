@@ -551,6 +551,66 @@
   </div>
 </div>
 
+<h3 contenteditable="false">3.2 Receivables — Gross Receivables / Bad debt / ECL（应收账款与减值）</h3>
+
+<div class="box" contenteditable="false">
+  <p class="meta">对应 SFP 流动资产里的 <em>Trade and other receivables</em> 一行。课上给的三个词：</p>
+
+  <table>
+    <thead>
+      <tr><th style="width:30%">术语</th><th>含义</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Gross Receivables</strong><span class="cn">应收账款总额</span></td>
+        <td>客户欠公司的<strong>全部</strong>金额，还没扣掉任何收不回的部分——账面上的原始数。</td>
+      </tr>
+      <tr>
+        <td><strong>Bad debt</strong><span class="cn">坏账</span></td>
+        <td><strong>已经确定收不回来</strong>的那部分，直接核销（written off）——比如客户破产、失联。这是<em>已经发生</em>的事实。</td>
+      </tr>
+      <tr>
+        <td><strong>ECL</strong> — Expected Credit Loss<span class="cn">预期信用损失</span></td>
+        <td>对剩下的应收款中<strong>预计将来可能收不回</strong>的部分，提前计提的准备（allowance）。这是<em>向前看的估计</em>，不是已发生的损失。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 contenteditable="false">三者的关系：从 Gross 到报表上的净额</h4>
+
+  <div class="formula">
+    　　Gross receivables　　　　　　　应收账款总额<br>
+    −　Bad debts written off　　　　　已确定收不回，核销掉<br>
+    −　Allowance for ECL　　　　　　　预计可能收不回，计提准备<br>
+    ＝　<strong>Net trade receivables</strong>　　　← 这才是印在 SFP 上的那个数
+  </div>
+
+  <div class="flow">
+    <div class="fstep start">Gross Receivables<span class="cn">客户欠的全部金额</span></div>
+    <div class="farrow">↓ 减去两层减值</div>
+    <div class="fcols two">
+      <div><strong>Bad debt</strong><span class="cn">已确定收不回 → 核销<br>（已发生 / backward-looking）</span></div>
+      <div><strong>ECL allowance</strong><span class="cn">预计收不回 → 计提准备<br>（未发生 / forward-looking）</span></div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="fstep start">Net Receivables<span class="cn">SFP 上列示的账面价值</span></div>
+  </div>
+
+  <div class="term">
+    <strong>Bad debt 和 ECL 的分界线，就是「确定」与「预计」：</strong><br>
+    Bad debt＝这笔钱<u>已经</u>没了，把它从账上抹掉；<br>
+    ECL＝这笔钱<u>可能</u>会没，先在旁边挂一个准备顶着，钱真收到了再冲回。
+  </div>
+
+  <div class="note">
+    <strong>接回真实报表：</strong>TotalEnergies 2025 年 SFP 上 <em>Trade and other receivables</em> = 25,087,856（KShs'000），
+    这是<strong>已经扣完减值的净额</strong>，不是 gross。<br>
+    利润表里单独有一行 <em>Net allowance for expected credit losses</em>（附注 6(b)）：2025 年是
+    <span class="unsure" title="该数字在照片上模糊，待核对">179,405</span> 的<strong>正数</strong>——正数意味着这一年是<strong>冲回</strong>了以前多提的准备（之前担心收不回的钱，后来收到了）；
+    2024 年则是 <span class="unsure" title="该数字在照片上模糊，待核对">(475,695)</span> 的负数，即当年新计提了准备。
+  </div>
+</div>
+
 <h3 contenteditable="false">4. Changes in Financial Position（财务状况的变动）</h3>
 
 <div class="box" contenteditable="false">
@@ -887,7 +947,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-08-24-inventory-classes-v2';
+const NOTES_VERSION = '2026-08-24-receivables-ecl-v1';
 
 function toggleEdit() {
   editMode = !editMode;
