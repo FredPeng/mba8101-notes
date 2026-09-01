@@ -1759,6 +1759,74 @@
 </div>
 
 
+<h3 contenteditable="false">9. 课堂笔记：Purchases、Inventory、Cost of Sales 与 Gross Profit 的关系</h3>
+
+<div class="box" contenteditable="false">
+  <p class="meta">课上给的三条式子，从单件推到总量：</p>
+
+  <h4 contenteditable="false">单件层面</h4>
+  <div class="formula">
+    Buying Price ＋ Gross Profit ＝ Selling Price<br>
+    <span class="meta">买价 ＋ 毛利 ＝ 卖价 —— 一件货加价多少卖出去</span>
+  </div>
+
+  <h4 contenteditable="false">总量层面</h4>
+  <div class="formula">
+    Purchases ＋ Gross Profit ＝ Sales<br>
+    <span class="meta">采购 ＋ 毛利 ＝ 销售 —— 前提：买进来的货<u>全部</u>卖掉了</span>
+  </div>
+
+  <h4 contenteditable="false">但现实中货不会全卖掉 —— Purchases 拆成两块</h4>
+  <div class="flow">
+    <div class="fstep start">Purchases<span class="cn">本期买进来的货</span></div>
+    <div class="farrow">↓ 拆成两部分</div>
+    <div class="fcols two">
+      <div><strong>Cost of Sales</strong><span class="cn">卖掉的那部分的成本<br>→ 进利润表，和 Sales 配比</span></div>
+      <div><strong>Inventory</strong><span class="cn">还没卖掉的那部分<br>→ 留在 SFP 上作资产</span></div>
+    </div>
+  </div>
+
+  <div class="formula">
+    Purchases ＝ Cost of Sales ＋ Inventory（期末结存）<br>
+    所以真正和毛利配对的是：<strong>Cost of Sales ＋ Gross Profit ＝ Sales</strong>
+  </div>
+
+  <div class="term">
+    <strong>这正是配比原则（Matching，原则 5）在起作用：</strong>
+    只有<u>卖掉的货</u>的成本才进本期利润表，和它带来的收入配比；没卖掉的货不是费用，是资产（Inventory），等它卖掉的那一期再变成 Cost of Sales。
+  </div>
+
+  <h4 contenteditable="false">完整公式（考虑期初存货）</h4>
+  <div class="formula">
+    Opening Inventory ＋ Purchases − Closing Inventory ＝ <strong>Cost of Sales</strong><br>
+    <span class="meta">期初存货 ＋ 本期采购 − 期末存货 ＝ 销售成本 —— 「可供销售的货」里没剩下的那部分就是卖掉的</span>
+  </div>
+
+  <table>
+    <thead><tr><th>概念</th><th>去向</th><th>哪张表</th></tr></thead>
+    <tbody>
+      <tr><td>Sales（销售收入）</td><td>本期收入</td><td>P&amp;L 第一行</td></tr>
+      <tr><td>Cost of Sales（销售成本）</td><td>与收入配比的费用</td><td>P&amp;L 第二行</td></tr>
+      <tr class="subtotal"><td>Gross Profit（毛利）</td><td>Sales − Cost of Sales</td><td>P&amp;L 小计</td></tr>
+      <tr><td>Closing Inventory（期末存货）</td><td>资产，留给下期</td><td>SFP 流动资产</td></tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <strong>接回真实报表：</strong>TotalEnergies 2025 年 P&amp;L 前三行正是这套关系——<br>
+    Net revenue 104,019,357 − Cost of sales 92,041,543 ＝ <strong>Gross profit 11,977,814</strong>（毛利率约 11.5%）；<br>
+    而没卖掉的油品就是 SFP 上的 Inventories 10,331,995。两张表在这里咬合。
+  </div>
+
+  <div class="note">
+    <strong>顺带两个术语（后面算比率会用）：</strong>
+    <strong>Margin（毛利率）</strong>＝ GP ÷ Sales（毛利占卖价的比例）；
+    <strong>Markup（加成率）</strong>＝ GP ÷ Cost（毛利占成本的比例）。
+    同一笔生意两个数不同：TotalEnergies 是 margin ≈ 11.5%、markup ≈ 13.0%。
+  </div>
+</div>
+
+
 <h2 contenteditable="false">Topic 3 — Regulation, Principles &amp; Quality（监管框架、会计原则与信息质量）</h2>
 
 <p class="meta" contenteditable="false">课件：Topic 3 MBA FMA Regulation Principles and Quality（25 页）· 3.1 监管框架 · 3.2 十二项会计原则 · 3.3 有用财务信息的质量特征</p>
@@ -1918,7 +1986,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-09-01-topics-1-2-3-slides-v1';
+const NOTES_VERSION = '2026-09-01-gross-profit-relation-v1';
 
 function toggleEdit() {
   editMode = !editMode;
