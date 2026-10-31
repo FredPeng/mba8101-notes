@@ -3023,6 +3023,105 @@
 </div>
 
 
+<h3 contenteditable="false">8.W 课堂练习精解 — Example 8.1 &amp; 8.2（完整答案）</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">Example 8.1 — Remalin 预算利润表与支持预算（2027 年第一季度）</h4>
+  <p class="meta">这道课堂题就是 <strong>2023 年真题 Q3(b) 的课堂版</strong>（真题行政费用 50M → 讲义改 60M，并多要一张材料采购预算）。练熟这一道 ＝ 做过 2023 真题。</p>
+  <p><strong>题面数据</strong>：销量 200,000 件 × 售价 Sh 4,000；销售费用 80M、配送费 40M、行政费用 60M；期初产成品 80,000 件（单位成本 2,900）、期末降至 40,000 件。每件耗 Isophane 10ml（@40）＋ Phenol 6ml（@20）；每件耗 Analytical 0.1 小时（@16,000/时）＋ Synthesis 0.1 小时（@7,200/时）；其他生产间接费用 38.4M。材料存货：Isophane 期初 320,000ml → 期末 240,000ml；Phenol 期初 192,000ml → 期末 144,000ml。<span class="unsure">（期初销量/存货段缺第一页照片，按 2023 真题补齐，拍到后请核对）</span></p>
+
+  <p><strong>① 生产预算</strong>（枢纽公式）：</p>
+  <div class="formula">生产量 ＝ 销量 ＋ 期末产成品 − 期初产成品 ＝ 200,000 ＋ 40,000 − 80,000 ＝ <strong>160,000 件</strong></div>
+
+  <p><strong>② 材料耗用预算</strong>：</p>
+  <table>
+    <thead><tr><th>材料</th><th class="num">每件用量</th><th class="num">总用量 (ml)</th><th class="num">单价</th><th class="num">金额 (Sh)</th></tr></thead>
+    <tbody>
+      <tr><td>Isophane</td><td class="num">10 ml</td><td class="num">1,600,000</td><td class="num">40</td><td class="num">64,000,000</td></tr>
+      <tr><td>Phenol</td><td class="num">6 ml</td><td class="num">960,000</td><td class="num">20</td><td class="num">19,200,000</td></tr>
+      <tr class="total"><td>耗用合计</td><td></td><td></td><td></td><td class="num">83,200,000</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>③ 材料采购预算</strong>（采购量 ＝ 耗用 ＋ 期末材料 − 期初材料）：</p>
+  <table>
+    <thead><tr><th>材料</th><th class="num">耗用</th><th class="num">＋期末</th><th class="num">−期初</th><th class="num">采购量 (ml)</th><th class="num">单价</th><th class="num">金额 (Sh)</th></tr></thead>
+    <tbody>
+      <tr><td>Isophane</td><td class="num">1,600,000</td><td class="num">240,000</td><td class="num">320,000</td><td class="num">1,520,000</td><td class="num">40</td><td class="num">60,800,000</td></tr>
+      <tr><td>Phenol</td><td class="num">960,000</td><td class="num">144,000</td><td class="num">192,000</td><td class="num">912,000</td><td class="num">20</td><td class="num">18,240,000</td></tr>
+      <tr class="total"><td>采购合计</td><td></td><td></td><td></td><td></td><td></td><td class="num">79,040,000</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">仓库在压库存（期末 &lt; 期初），所以买的比用的少——这正是耗用预算和采购预算必须分开编的原因。</p>
+
+  <p><strong>④ 直接人工预算</strong>：</p>
+  <table>
+    <thead><tr><th>部门</th><th class="num">每件工时</th><th class="num">总工时</th><th class="num">费率/时 (Sh)</th><th class="num">金额 (Sh)</th></tr></thead>
+    <tbody>
+      <tr><td>Analytical</td><td class="num">0.1</td><td class="num">16,000</td><td class="num">16,000</td><td class="num">256,000,000</td></tr>
+      <tr><td>Synthesis</td><td class="num">0.1</td><td class="num">16,000</td><td class="num">7,200</td><td class="num">115,200,000</td></tr>
+      <tr class="total"><td>人工合计</td><td></td><td></td><td></td><td class="num">371,200,000</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>⑤ 生产成本与单位成本</strong>：</p>
+  <table>
+    <tbody>
+      <tr><td>直接材料（<strong>耗用口径②，不是采购口径③！</strong>）</td><td class="num">83,200,000</td></tr>
+      <tr><td>直接人工</td><td class="num">371,200,000</td></tr>
+      <tr><td>其他生产间接费用</td><td class="num">38,400,000</td></tr>
+      <tr class="subtotal"><td>本期生产成本（160,000 件）</td><td class="num">492,800,000</td></tr>
+      <tr class="total"><td>单位生产成本（÷160,000）</td><td class="num">3,080 / 件</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>预算利润表（FIFO：先卖期初 80,000 件 @2,900，再卖本期 120,000 件 @3,080）</strong>：</p>
+  <table>
+    <thead><tr><th>Budgeted Statement of Profit or Loss, Q1 2027</th><th class="num">Sh</th></tr></thead>
+    <tbody>
+      <tr><td>Sales（200,000 × 4,000）</td><td class="num">800,000,000</td></tr>
+      <tr><td>Cost of sales：期初 80,000 × 2,900</td><td class="num neg">(232,000,000)</td></tr>
+      <tr><td>　　　　　　 本期售出 120,000 × 3,080</td><td class="num neg">(369,600,000)</td></tr>
+      <tr class="subtotal"><td>Gross Profit</td><td class="num">198,400,000</td></tr>
+      <tr><td>Selling expenses</td><td class="num neg">(80,000,000)</td></tr>
+      <tr><td>Distribution costs</td><td class="num neg">(40,000,000)</td></tr>
+      <tr><td>Administration expenses</td><td class="num neg">(60,000,000)</td></tr>
+      <tr class="grand"><td>Budgeted Profit</td><td class="num">18,400,000</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">验算（存货恒等式）：期初 FG 232M ＋ 生产 492.8M − COS 601.6M ＝ 期末 FG 123.2M ＝ 40,000 × 3,080 ✓。若改用加权平均：平均成本 ＝ (232M＋492.8M)÷240,000 ＝ 3,020/件，利润变 16,000,000——答题写明所用假设即可。2023 真题版（行政费 50M）答案为 28,400,000。</p>
+
+  <div class="note"><strong>三个丢分点</strong>：① 进利润表的是「耗用」83.2M，不是「采购」79.04M（采购只服务现金与应付款）；② 产成品和材料<strong>两层存货都要调</strong>，且本题方向一致都在压库存：生产 &lt; 销售、采购 &lt; 耗用；③ 期初产成品按它自己的 2,900 计价，不是新成本 3,080。</div>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">Example 8.2 — Officemate 弹性预算与业绩评价</h4>
+  <p class="meta">与 <strong>2024 年真题 Q3(b)</strong> 同构（真题：Diamond 公司，计划 3,000 实际 4,000、实际利润 $400,000）。</p>
+
+  <p><strong>第一步：拆成本性态（每把椅子）</strong>——售价 $500；变动成本：金属 5kg×12＝60 ＋ 皮革 2m×15＝30 ＋ 成型工 30min×6＝180 ＋ 修整工 20min×1＝20 ＋ 变动制造费用 40 ＋ 变动销售配送 10 ＝ <strong>$340/件</strong>；<strong>单位贡献 ＝ $160</strong>。固定成本（1,000–5,000 件相关区间内）：生产 50,000 ＋ 行政 60,000 ＋ 销售配送 30,000 ＝ <strong>$140,000</strong>；到 <strong>6,000 件</strong>跨出相关区间，固定生产费用跳升 10,000 → 合计 <strong>$150,000</strong>（阶梯成本）。</p>
+
+  <p><strong>Required 1：弹性预算利润表（2025 年）</strong></p>
+  <table>
+    <thead><tr><th></th><th class="num">1,000</th><th class="num">2,000</th><th class="num">3,000</th><th class="num">4,000</th><th class="num">5,000</th><th class="num">6,000</th></tr></thead>
+    <tbody>
+      <tr><td>Sales @ $500</td><td class="num">500,000</td><td class="num">1,000,000</td><td class="num">1,500,000</td><td class="num">2,000,000</td><td class="num">2,500,000</td><td class="num">3,000,000</td></tr>
+      <tr><td>Variable costs @ $340</td><td class="num neg">(340,000)</td><td class="num neg">(680,000)</td><td class="num neg">(1,020,000)</td><td class="num neg">(1,360,000)</td><td class="num neg">(1,700,000)</td><td class="num neg">(2,040,000)</td></tr>
+      <tr class="subtotal"><td>Contribution @ $160</td><td class="num">160,000</td><td class="num">320,000</td><td class="num">480,000</td><td class="num">640,000</td><td class="num">800,000</td><td class="num">960,000</td></tr>
+      <tr><td>Fixed costs</td><td class="num neg">(140,000)</td><td class="num neg">(140,000)</td><td class="num neg">(140,000)</td><td class="num neg">(140,000)</td><td class="num neg">(140,000)</td><td class="num neg">(150,000)</td></tr>
+      <tr class="grand"><td>Budgeted profit</td><td class="num">20,000</td><td class="num">180,000</td><td class="num">340,000</td><td class="num">500,000</td><td class="num">660,000</td><td class="num">810,000</td></tr>
+    </tbody>
+  </table>
+  <p class="meta">结构要点：销售、变动成本、贡献按单位标准随量伸缩；固定成本在相关区间内一条直线，只在 6,000 件处跳一级。</p>
+
+  <p><strong>Required 2：业绩评价（计划 3,000 件，实际 4,000 件，实际利润 $450,000）</strong></p>
+  <table>
+    <thead><tr><th></th><th class="num">静态预算 (3,000)</th><th class="num">弹性预算 (4,000)</th><th class="num">实际 (4,000)</th></tr></thead>
+    <tbody><tr><td>利润</td><td class="num">340,000</td><td class="num">500,000</td><td class="num">450,000</td></tr></tbody>
+  </table>
+  <p><strong>销量差异 $160,000 F</strong>：多卖 1,000 件 × 贡献 $160，这是销量的功劳，把基准从 340,000 抬到 500,000。<strong>弹性预算差异 $50,000 A</strong>：在 4,000 件的量上「应赚」500,000 实赚 450,000——虽然比静态预算多赚 110,000，<strong>经营本身其实跑输了 5 万</strong>。只和静态预算比会把这当成「超额完成」表扬——这正是弹性预算存在的理由。</p>
+  <p><strong>可能原因（答 3–5 条）</strong>：①为多卖 1,000 件打折降价（价格差异）；②材料涨价或超耗（材料价/量差异）；③加班费率上升或效率下降（人工费率/效率差异）；④变动制造费用超支；⑤固定费用超支（如为冲量追加的广告）。<strong>结论</strong>：量 favourable、成本/价格控制 adverse，应按例外管理拆出明细差异逐项追查，而不是庆祝「超过原预算」。</p>
+</div>
+
 <h2 contenteditable="false">Topic 9 — MA and Decision Making（管理会计与决策）</h2>
 
 <p class="meta" contenteditable="false">课件：Topic 9 MBA FMA Decision Making（33 页）· 相关成本八原则 · 四大决策场景（产品组合 / 自制外购 / 关停 / 特殊订单），每个都有完整例题</p>
@@ -3240,6 +3339,257 @@
 </div>
 
 
+<h2 contenteditable="false">全课重点总结 — 每个 Topic 的核心概念精讲</h2>
+
+<p class="meta" contenteditable="false">这一章不求简洁，求讲透：每个概念按「是什么 → 为什么存在 → 考试怎么用」展开。复习顺序建议：先读这一章建立框架，再回各 Topic 补细节，最后进真题库练手。</p>
+
+<h3 contenteditable="false">0. 先看全局：一张地图装下整门课</h3>
+
+<div class="box" contenteditable="false">
+  <p>这门课由<strong>两个半场</strong>构成，服务于同一个目标——让管理者（而非会计师）<strong>看懂财务信息、用财务信息做决策</strong>：</p>
+  <table>
+    <thead><tr><th style="width:18%"></th><th style="width:41%">上半场：财务会计（Topic 1–5）</th><th>下半场：管理会计（Topic 6–11）</th></tr></thead>
+    <tbody>
+      <tr><td><strong>回答的问题</strong></td><td>公司<strong>过去</strong>干得怎么样？（给外部人看）</td><td>公司<strong>接下来</strong>该怎么干？（给内部管理层用）</td></tr>
+      <tr><td><strong>产出</strong></td><td>一套标准化的财务报表（受 IFRS 监管，格式统一）</td><td>预算、成本分析、决策建议（无监管，怎么有用怎么来）</td></tr>
+      <tr><td><strong>核心动作</strong></td><td>记录 → 汇总 → 报告 → <strong>解读</strong></td><td>估成本 → 做计划 → 比差异 → <strong>做决策</strong></td></tr>
+      <tr><td><strong>考试落点</strong></td><td>Q1 年报案例（50 分）+ Q2 编报表（25 分）</td><td>Q3 成本/预算计算 + Q4 决策（各 25 分）</td></tr>
+    </tbody>
+  </table>
+  <p>两个半场共用一个地基——<strong>会计恒等式</strong>。它值得背下来，因为所有报表、所有分录、所有调整，最终都要让这个等式保持成立：</p>
+  <div class="formula">资产 Assets ＝ 负债 Liabilities ＋ 所有者权益 Equity<br>展开：A ＝ L ＋ (股本 ＋ 储备 ＋ 留存利润 ＋ 本期利润 − 股利)</div>
+  <p>直觉理解：公司拥有的每一分钱资源（资产），要么是借来的（负债），要么是股东的（权益）。利润之所以会增加权益，是因为赚到的钱在分掉之前都属于股东。</p>
+</div>
+
+<h3 contenteditable="false">1. Topic 1 — 会计是商业的语言</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">六张报表各自回答一个问题</h4>
+  <p>一套完整的财务报表（IAS 1 规定）有六个组件。不要死背名字，记住<strong>每张表回答的那个问题</strong>：</p>
+  <table>
+    <thead><tr><th style="width:34%">报表</th><th style="width:26%">回答的问题</th><th>关键结构</th></tr></thead>
+    <tbody>
+      <tr><td><strong>SFP</strong> 财务状况表（资产负债表）</td><td>某一<strong>时点</strong>，公司有什么、欠什么？</td><td>资产（非流动＋流动）＝负债＋权益；流动/非流动以<strong>一年</strong>为界</td></tr>
+      <tr><td><strong>SPL</strong> 损益表</td><td>这一<strong>期间</strong>赚了还是亏了？</td><td>收入 − 销售成本 ＝ 毛利 → 减运营费用 → 减财务费用 → 减税 ＝ 净利润</td></tr>
+      <tr><td><strong>SCI</strong> 综合收益表</td><td>还有哪些<strong>没进损益</strong>的价值变动？</td><td>净利润 ＋ 其他综合收益（如土地重估增值）＝ 综合收益</td></tr>
+      <tr><td><strong>SCE</strong> 权益变动表</td><td>股东的钱这一年<strong>怎么变的</strong>？</td><td>期初权益 ＋ 利润 ＋ 新股 ＋ 重估 − 股利 ＝ 期末权益（按股本/溢价/储备/留存分列）</td></tr>
+      <tr><td><strong>SCF</strong> 现金流量表</td><td>现金<strong>从哪来、到哪去</strong>？</td><td>经营 ＋ 投资 ＋ 筹资 三类活动的现金净额 ＝ 现金变动</td></tr>
+      <tr><td><strong>Notes</strong> 附注</td><td>数字背后的<strong>政策与明细</strong>是什么？</td><td>会计政策、科目拆解、或有事项——占年报篇幅最大</td></tr>
+    </tbody>
+  </table>
+  <p><strong>为什么利润和现金是两回事</strong>（SPL 与 SCF 并存的原因）：权责发生制下，赊销当期就确认收入，但钱可能明年才到；折旧扣减利润，却一分钱现金都不动。所以一家公司可以「有利润没现金」（账面赚钱、客户欠款收不回）而倒闭，也可以「有现金没利润」。分析时两张表要对照着看——这正是比率分析里 Cash flow to assets、Cash return on revenue 这类指标存在的理由。</p>
+
+  <h4 contenteditable="false">报表之间的勾稽关系（考编表题的自查工具）</h4>
+  <p>六张表不是孤立的：<strong>SPL 的净利润</strong>流入 <strong>SCE 的留存利润</strong>，SCE 的期末权益就是 <strong>SFP 的权益部分</strong>；SCF 算出的期末现金等于 SFP 上的现金余额。编完报表后沿这条链验一遍，是 Q2 拿满分的保险绳。</p>
+
+  <h4 contenteditable="false">资产负债表上的高频科目（课上逐个讲过的）</h4>
+  <table>
+    <thead><tr><th style="width:30%">科目</th><th>要点</th></tr></thead>
+    <tbody>
+      <tr><td>存货 Inventory</td><td>四层：原材料 → 在制品 WIP → 产成品 → 消耗品。按<strong>成本与可变现净值孰低</strong>计量（IAS 2）</td></tr>
+      <tr><td>应收账款与 ECL</td><td>总应收 − <strong>预期信用损失准备 ECL</strong>（IFRS 9：不等真坏账发生，按违约概率提前计提）＝ 净应收。ECL 增加时差额进当期费用</td></tr>
+      <tr><td>现金及等价物</td><td>库存现金 ＋ 银行存款 ＋ <strong>现金等价物</strong>（3 个月内到期、价值波动小的短期投资，如国库券）</td></tr>
+      <tr><td>权益四件套</td><td><strong>股本</strong>（面值×股数）、<strong>股本溢价</strong>（发行价超面值部分）、<strong>重估储备</strong>（资产重估增值，不可分红）、<strong>留存利润</strong>（历年净利润减股利的累积）</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 contenteditable="false">2. Topic 2 — 数字是怎么从一笔交易变成报表的（FAR 流程）</h3>
+
+<div class="box" contenteditable="false">
+  <p>整个财务会计就是一条流水线。考 Q2（试算表编三表）时你是在做这条线的<strong>最后两步</strong>，所以先把全线看清楚：</p>
+  <div class="formula">交易发生 → 原始凭证 → 日记账 → 分类账（T 账户）→ <strong>试算平衡表 Trial Balance</strong> → 期末调整 → <strong>三大报表</strong></div>
+
+  <h4 contenteditable="false">复式记账的逻辑（不用背口诀的理解法）</h4>
+  <p>每笔交易必然同时影响<strong>两个以上</strong>科目，且借方总额＝贷方总额——因为恒等式 A＝L＋E 两边必须一起动。记忆框架：<strong>资产和费用属于「借方家族」</strong>（增加记借方），<strong>负债、权益和收入属于「贷方家族」</strong>（增加记贷方）。例：赊销 100 → 应收（资产）借 100，销售收入贷 100；两边都涨，等式仍平。</p>
+
+  <h4 contenteditable="false">试算平衡表：它证明什么、不证明什么</h4>
+  <p>Trial Balance 把所有账户余额列成借/贷两列，两列合计必须相等。它<strong>只证明</strong>「借贷录入在算术上平衡」，<strong>不证明</strong>账是对的——漏记一整笔、借贷方向同时记反、金额同时写错，TB 照样平。所以 TB 之后还有审计。考试里 TB 是 Q2 的题面：给你一张平的 TB＋一堆附加信息，让你调整后出三张报表。</p>
+
+  <h4 contenteditable="false">六大期末调整（Q2 的得分点全在这里）</h4>
+  <p>TB 上的数字是「原始流水」，要变成符合权责发生制的报表，必须做期末调整。每种调整背后都是同一个思想：<strong>把收入和费用放进它们真正所属的期间</strong>。</p>
+  <table>
+    <thead><tr><th style="width:22%">调整</th><th style="width:44%">做法</th><th>对报表的影响</th></tr></thead>
+    <tbody>
+      <tr><td>① 期末存货</td><td>销售成本 ＝ 期初存货 ＋ 购货 − <strong>期末存货</strong></td><td>期末存货同时出现在 SPL（减 COS）和 SFP（流动资产）</td></tr>
+      <tr><td>② 折旧/摊销</td><td>按给定比率提本年折旧，<strong>按题目指示归类</strong>（如建筑物→行政费用、车辆→配送费用）</td><td>SPL 加费用；SFP 累计折旧增加、净值减少</td></tr>
+      <tr><td>③ 应计/预付</td><td>应计费用：已发生未付 → 费用调增＋流动负债；预付费用：已付未发生 → 费用调减＋流动资产</td><td>两头调：SPL 费用、SFP 资产/负债</td></tr>
+      <tr><td>④ ECL/坏账</td><td>先核销确定的坏账，再把 ECL 准备调到目标数，<strong>变动额</strong>进损益</td><td>SPL 费用（或转回收益）；SFP 净应收变化</td></tr>
+      <tr><td>⑤ 重估</td><td>土地重估增值<strong>不进利润</strong>，进重估储备（OCI）</td><td>SFP 资产调升＋重估储备增加；SCE 单列一行</td></tr>
+      <tr><td>⑥ 税与利息补提</td><td>实际税负>已付分期税的差额记应付税；半年付息的贷款要补提未付一期</td><td>SPL 费用；SFP 流动负债</td></tr>
+    </tbody>
+  </table>
+  <div class="note"><strong>最常丢分的三处：</strong>折旧必须按题目给的费用类别放（放错行扣分）；新发股票如未入账要同时补股本＋溢价＋银行存款；股利不是费用——它走 SCE，不进损益表。</div>
+</div>
+
+<h3 contenteditable="false">3. Topic 3 — 为什么要监管、规则是什么、好信息长什么样</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">监管的五个来源（2017 真题直接考了 10 分）</h4>
+  <p>财务报表给外部人做决策用，所以必须可信；可信靠监管。五个来源记法——「法、准、所、会、内」：</p>
+  <p>① <strong>公司法</strong>（如肯尼亚 Companies Act：强制年报、审计、披露）；② <strong>会计准则</strong>（IFRS/IAS，技术规则的主体）；③ <strong>证券交易所</strong>上市规则（如 NSE：更频繁更详细的披露）；④ <strong>职业会计师组织</strong>（如 ICPAK：从业资格与职业道德惩戒）；⑤ <strong>公司治理机制</strong>（董事会、审计委员会、内外部审计）。</p>
+
+  <h4 contenteditable="false">IFRS 体系：谁制定、管什么</h4>
+  <p>IASB（国际会计准则理事会）制定 <strong>IFRS</strong>（新准则）和维护 <strong>IAS</strong>（旧编号仍有效），全球 140+ 法域采用，肯尼亚全盘采用。常考的几个：<strong>IAS 1</strong>（报表列报——六张报表就出自它）、<strong>IAS 2</strong>（存货：成本与可变现净值孰低；2023 真题考进口平板的成本构成）、<strong>IAS 16</strong>（固定资产与折旧）、<strong>IFRS 9</strong>（金融工具——ECL 出自它）、<strong>IFRS 15</strong>（收入确认）、<strong>IFRS 16</strong>（租赁上表）。中国的 CAS 与 IFRS 实质趋同——你在国内学的底层逻辑在这里全部适用。</p>
+
+  <h4 contenteditable="false">信息质量特征：2 项基础 ＋ 4 项增强（2018.08 真题考 5 分）</h4>
+  <p><strong>基础特征</strong>（没有就不算有用信息）：<strong>相关性 Relevance</strong>——能影响决策（有预测价值或印证价值，受重要性约束）；<strong>如实反映 Faithful representation</strong>——完整、中立、无差错。<strong>增强特征</strong>（锦上添花）：<strong>可比性</strong>（跨期、跨公司可以比——这是比率分析的前提）、<strong>可验证性</strong>（独立的人能得出相同结论）、<strong>及时性</strong>、<strong>可理解性</strong>。约束条件：收益>成本。</p>
+
+  <h4 contenteditable="false">底层会计原则（答理论题时的词汇库）</h4>
+  <p><strong>权责发生制</strong>（按发生而非收付记账——整个 Topic 2 的调整都源于它）、<strong>持续经营</strong>（假设公司继续经营，否则资产要按清算价计）、<strong>谨慎性</strong>（损失早认、收益晚认——ECL 就是谨慎性的体现）、<strong>一致性</strong>（政策不随意变）、<strong>重要性</strong>（小事可从简）、<strong>实质重于形式</strong>。</p>
+</div>
+
+<h3 contenteditable="false">4. Topic 4 — 年报：一本书，不只是报表</h3>
+
+<div class="box" contenteditable="false">
+  <p>年报（Annual Report）= 财务报表 ＋ 一组叙述性报告。Q1 的案例就是从真实年报里截出来的，所以要知道每个部分是干什么的（2021.01 真题直接考了 9 分）：</p>
+  <table>
+    <thead><tr><th style="width:30%">组成部分</th><th>内容与用途</th></tr></thead>
+    <tbody>
+      <tr><td><strong>MD&amp;A</strong> 管理层讨论与分析</td><td>管理层用自己的话解释业绩：经营环境、分部表现、风险、展望。读年报先读它——它告诉你数字「为什么」变</td></tr>
+      <tr><td><strong>公司治理报告</strong></td><td>董事会构成、各委员会、董事薪酬、内控声明——回答「这家公司由谁、怎么管着」</td></tr>
+      <tr><td><strong>可持续发展/社会与环境报告</strong></td><td>ESG：环境影响、社区投入、员工。利益相关者越来越看重</td></tr>
+      <tr><td><strong>审计报告</strong></td><td>独立审计师对报表是否「真实公允 true and fair」发表意见。先看意见类型：无保留/保留/否定/无法表示意见</td></tr>
+      <tr><td><strong>财务报表＋附注</strong></td><td>六件套本体（见 Topic 1）</td></tr>
+    </tbody>
+  </table>
+  <p><strong>读年报的实战顺序</strong>（= Q1 答题顺序）：主业是什么（看 MD&amp;A 和公司简介）→ 最大的几个数字变了多少（SPL 和 SFP 的材料性大项）→ 为什么变（MD&amp;A 找原因）→ 算比率验证 → 用 BSC 补非财务视角。</p>
+</div>
+
+<h3 contenteditable="false">5. Topic 5 — 报表分析：三板斧与六类比率</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">三板斧</h4>
+  <p>① <strong>横向分析</strong>：同一科目跨期比（金额变动＋百分比变动）——Q1(b) 的「关键项目变动表」就是它；② <strong>纵向/共同尺度分析</strong>：所有项目除以一个基数（收入或总资产），把不同规模的公司放到同一尺度——Syndicate 作业的核心方法；③ <strong>比率分析</strong>：两个科目相除，考察结构关系。</p>
+
+  <h4 contenteditable="false">六类比率：每类回答一个管理问题</h4>
+  <table>
+    <thead><tr><th style="width:17%">类别</th><th style="width:25%">回答的问题</th><th style="width:38%">核心公式</th><th>解读要点</th></tr></thead>
+    <tbody>
+      <tr><td><strong>盈利能力</strong></td><td>赚钱效率如何？</td><td>毛利率＝毛利÷收入；净利率＝净利润÷收入；ROE＝净利润÷权益；ROI/ROA＝净利润÷总资产</td><td>毛利率看产品力，净利率看费用控制；ROE 是股东视角的总分</td></tr>
+      <tr><td><strong>流动性</strong></td><td>短期债还得上吗？</td><td>流动比率＝流动资产÷流动负债；速动比率＝(流动资产−存货−预付)÷流动负债</td><td>速动剔除存货，因为存货变现最慢；比率太高也不好（资金闲置）</td></tr>
+      <tr><td><strong>偿债/杠杆</strong></td><td>长期债压不压垮？</td><td>资产负债率＝总负债÷总资产；债务权益比＝总负债÷权益</td><td>高杠杆放大收益也放大风险；看行业惯例（银行天然高）</td></tr>
+      <tr><td><strong>效率</strong></td><td>资产转得快吗？</td><td>总资产周转率＝收入÷总资产；存货周转天数＝365÷(COS÷存货)；应收天数＝365÷(收入÷应收)</td><td>周转越快，同样的资产做出越多生意</td></tr>
+      <tr><td><strong>现金流</strong></td><td>利润是真金白银吗？</td><td>现金资产回报＝经营现金流÷总资产；现金收入比＝经营现金流÷收入</td><td>与净利率对照：利润高而现金差＝收入质量可疑</td></tr>
+      <tr><td><strong>投资者</strong></td><td>股东拿到什么？</td><td>EPS＝净利润÷股数；DPS＝股利÷股数；市盈率＝股价÷EPS</td><td>上市公司必披露 EPS（IAS 33）</td></tr>
+    </tbody>
+  </table>
+  <div class="answer"><strong>考试写比率点评的公式化句型</strong>：①报数（两年各多少）→ ②定方向（改善/恶化）→ ③给原因（联动哪个科目变了）→ ④下判断（对流动性/盈利性意味着什么）。每个比率两句话，四个维度各覆盖到，分就齐了。比率公式在不同教材略有出入（如 ROI 用税前还是税后），考试写明你用的口径即可。</div>
+</div>
+
+<h3 contenteditable="false">6. Topic 6 — 成本：分类、估计、核算</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">成本分类：同一笔钱的七种切法</h4>
+  <p>管理会计的第一步是把成本「切对刀」。不同决策用不同的切法：</p>
+  <table>
+    <thead><tr><th style="width:30%">切法</th><th>区别与用途</th></tr></thead>
+    <tbody>
+      <tr><td><strong>按性态</strong>：固定/变动/混合/阶梯</td><td>固定成本总额不随产量变（厂租），变动成本随产量线性变（材料）；混合成本两者兼有（电费＝基本费＋度数）；<strong>阶梯成本</strong>在相关区间内固定、跨过门槛跳升（多租一个仓库）——CVP 和弹性预算的地基</td></tr>
+      <tr><td><strong>按对象</strong>：直接/间接</td><td>能否直接追溯到产品。间接成本（制造费用）需要「分摊」——于是有了传统分摊 vs ABC 之争</td></tr>
+      <tr><td><strong>按功能</strong>：生产/非生产</td><td>生产成本进存货（产品成本），销售和行政费用当期扣（期间成本）——决定利润何时被影响</td></tr>
+      <tr><td><strong>按决策相关性</strong>：相关/非相关</td><td>只有<strong>未来的、随决策而变的现金流</strong>才相关；沉没成本永远不相关——Topic 9 的全部基础</td></tr>
+      <tr><td><strong>按可控性</strong>：可控/不可控</td><td>考核经理只看他管得着的成本——绩效管理（Topic 10）的公平性原则</td></tr>
+    </tbody>
+  </table>
+
+  <h4 contenteditable="false">成本估计：把总成本拆成 固定 ＋ 变动×产量</h4>
+  <p>很多成本是混合的，决策前要拆开。模型统一是 <span class="cn">Y ＝ a ＋ bX</span>（a＝固定成本，b＝单位变动成本）。两种拆法：</p>
+  <p><strong>① 高低点法</strong>：取产量最高、最低两个月，b＝(成本差)÷(产量差)，再代回求 a。优点是简单，缺点是只用两个极端点，极端值恰恰容易不正常。</p>
+  <p><strong>② 回归法</strong>：用全部数据拟合直线。<strong>考试必考读 Excel 回归输出表</strong>（同一张表考了至少 4 年）：Intercept 系数＝a（固定成本），Slope 系数＝b（单位变动成本）；<strong>R²</strong>＝X 解释了 Y 变动的百分之几（0.586＝58.6%，中等）；<strong>Significance F / p 值</strong> &lt; 0.05 说明关系显著；系数的 <strong>Lower/Upper 95%</strong> 给出置信区间，代入 X 可得预测值的区间。评价可靠性就谈这四样＋样本量＋是否外推出数据范围。</p>
+
+  <h4 contenteditable="false">间接费用分摊：传统法 vs ABC</h4>
+  <p><strong>传统法</strong>：全部制造费用 ÷ 一个总量基础（机器小时或人工小时）＝ 一个厂级分摊率，按用时分给产品。简单，但当产品复杂度差异大时失真——「大批量简单产品补贴小批量复杂产品」。<strong>ABC（作业成本法）</strong>：把费用按「作业」分池（调机、质检、收料、发运），每池找自己的<strong>成本动因</strong>（调机次数、检验批次），按各产品消耗的动因量分配。更准，尤其适合品种多、批量差异大、间接费用占比高的企业；代价是数据工作量大。</p>
+
+  <h4 contenteditable="false">服务定价（肯尼亚考卷特色题）</h4>
+  <p>服务业没有「件」，先定义 <strong>cost unit</strong>（客公里、床日、房晚、学时）→ 归集直接成本 → 分摊间接成本 → 除以预计业务量得单位成本 → 加成定价。机票（2021.01）、病床（2015）、酒店房（2021.01）全是这一个模子。</p>
+</div>
+
+<h3 contenteditable="false">7. Topic 7 — CVP：一门课最重要的单一概念是「贡献」</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>贡献 Contribution ＝ 售价 − 单位变动成本</strong>。它是管理会计下半场的万能钥匙：CVP 用它、弹性预算用它、四类决策全用它。直觉：每多卖一件，先「贡献」这么多钱去覆盖固定成本；固定成本被覆盖完之后，每件的贡献就全是利润。</p>
+  <div class="formula">利润 Π ＝ (SP × Q) − (VC × Q) − TFC ＝ 贡献×销量 − 固定成本</div>
+  <table>
+    <thead><tr><th style="width:38%">要算什么</th><th>公式</th></tr></thead>
+    <tbody>
+      <tr><td>保本点（件）</td><td>固定成本 ÷ 单位贡献</td></tr>
+      <tr><td>保本点（金额）</td><td>固定成本 ÷ 贡献率（贡献÷售价）</td></tr>
+      <tr><td>目标利润销量</td><td>(固定成本 ＋ 目标利润) ÷ 单位贡献</td></tr>
+      <tr><td>税后目标利润</td><td>先还原税前：税前利润 ＝ 税后 ÷ (1−税率)，再套上式</td></tr>
+      <tr><td>安全边际</td><td>(预计销量 − 保本销量) ÷ 预计销量——离亏损还有多远</td></tr>
+      <tr><td><strong>多产品保本</strong></td><td>按销量比例打包成「组合包」，算每包加权贡献，固定成本 ÷ 每包贡献 ＝ 包数，再拆回各产品（2023 真题轮椅题）</td></tr>
+    </tbody>
+  </table>
+  <p><strong>五个假设</strong>（2018.08 考了 5 分）：售价不变；成本可分解为固定＋变动且线性；只在相关区间内成立；产销平衡（无存货变化）；多产品时销售组合不变。答题时能指出「固定成本实际会阶梯跳升」「大客户会压价」即显示理解假设的局限。</p>
+</div>
+
+<h3 contenteditable="false">8. Topic 8 — 预算：编、比、纠</h3>
+
+<div class="box" contenteditable="false">
+  <p>预算是「把战略翻译成一年期的数字」。整个 Topic 可以组织成三个动作：</p>
+
+  <h4 contenteditable="false">动作一：编（Master Budget 的生产线）</h4>
+  <p>编预算有严格的先后顺序，因为后一张表的输入是前一张的输出。起点是<strong>限制因素</strong>（通常是销量，产能紧张时是产能）：</p>
+  <div class="formula">销售预算 → 生产预算 → 材料耗用预算 → 材料采购预算 → 人工预算 → 制造费用预算 → 现金预算 → 预算利润表＋预算资产负债表（合称 Master Budget）</div>
+  <p>两个枢纽公式，全部考题都绕着它们转（注意<strong>两层存货、两次调整</strong>）：</p>
+  <div class="formula">生产量 ＝ 销量 ＋ 期末产成品存货 − 期初产成品存货<br>采购量 ＝ 生产耗用 ＋ 期末材料存货 − 期初材料存货</div>
+  <p>最易错点：<strong>进利润表的是「耗用」，进现金预算的是「采购」</strong>——见下方 worked example 8.1 的教训。</p>
+
+  <h4 contenteditable="false">动作二：比（必须先弹性化再比）</h4>
+  <p><strong>静态预算</strong>按计划销量编，实际销量一变它就失去可比性。正确做法：把预算按<strong>实际销量</strong>重算一遍（变动成本按单位标准×实际量，固定成本原样保留）得到<strong>弹性预算</strong>，再与实际比。两段差异各有归属：<strong>销量差异</strong>（静态 vs 弹性）归销售部门的量，<strong>弹性预算差异</strong>（弹性 vs 实际）归经营效率与价格——见 worked example 8.2，实际利润「超了静态预算」却「跑输弹性预算」的陷阱每年都考。</p>
+
+  <h4 contenteditable="false">动作三：纠（差异分析与例外管理）</h4>
+  <p>弹性预算差异可继续拆成 11 项（材料价/量、人工费率/效率、变动费用开支/效率、固定费用开支等）。管理原则是<strong>例外管理</strong>：只追查超过阈值的差异，favourable 的差异也要查（材料太便宜可能是质量下降）。</p>
+
+  <h4 contenteditable="false">编法之争：增量 vs 零基 vs 滚动</h4>
+  <p><strong>增量预算</strong>：上年数＋增减——快，但把历史低效也继承了；<strong>零基预算 ZBB</strong>：一切从零论证——干净，但费时费力、易引发博弈（2017 真题考对比）；<strong>滚动预算</strong>：每过一季就续编一季，永远保持 12 个月视界——适合环境多变（2021.01 真题借 Covid 考）。预算的行为学问题：<strong>budgetary slack</strong>（经理故意压低目标好轻松达标）——参与式预算＋高层复核来治。</p>
+</div>
+
+<h3 contenteditable="false">9. Topic 9 — 决策：只看「相关成本」</h3>
+
+<div class="box" contenteditable="false">
+  <p>决策分析的总原则只有一句话：<strong>只比较会因这个决策而改变的未来现金流</strong>。三个判定条件（2015 真题考 6 分）：①未来的（过去的钱已沉没）；②现金的（折旧这类账面分摊不算）；③差异的（两个方案下都一样的项目不用比）。因此<strong>沉没成本、已承诺成本、分摊来的固定费用</strong>一律无关。</p>
+  <table>
+    <thead><tr><th style="width:20%">决策场景</th><th style="width:44%">判定规则</th><th>经典陷阱</th></tr></thead>
+    <tbody>
+      <tr><td><strong>特殊订单</strong></td><td>有闲置产能时：报价 &gt; 增量（变动）成本 就接</td><td>用全额成本拒单（2018.12 轮胎题：11,250 &gt; 7,500 该接而被拒）</td></tr>
+      <tr><td><strong>自制 vs 外购</strong></td><td>外购价 vs <strong>可避免成本</strong>（变动成本＋真正省得掉的固定成本）</td><td>把分摊的不可避免费用算进「自制成本」，高估自制的贵（Specks：30 vs 24，该自制）</td></tr>
+      <tr><td><strong>关停分部</strong></td><td>失去的贡献 vs 省下的可避免成本；分摊总部费用关了也省不掉</td><td>看见「部门净亏损」就关——亏损部门可能仍在用贡献分担共同费用（Spiral 银行题）</td></tr>
+      <tr><td><strong>受限资源组合</strong></td><td>按<strong>单位瓶颈资源的贡献</strong>排序生产，不是按单位贡献排序</td><td>排序用错分母（Copy Fox 题三连考）</td></tr>
+    </tbody>
+  </table>
+  <p>每道决策题最后 2–4 分是<strong>定性因素</strong>：供应商可靠性与质量、员工士气与裁员、客户关系与长期价格、战略灵活性。算完数必写两条。</p>
+</div>
+
+<h3 contenteditable="false">10. Topic 10 — 绩效：从单一利润到平衡计分卡</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">为什么光看利润不行</h4>
+  <p>财务指标是<strong>滞后</strong>指标（结果出来才知道），只反映短期，还容易被操纵（砍研发、砍维护就能立刻增利）。所以绩效管理要加入领先的、非财务的视角——这就是 BSC 的由来。</p>
+  <h4 contenteditable="false">平衡计分卡 BSC（Q1(d) 每年 10 分）</h4>
+  <p>经典四视角＋本课扩展：<strong>财务</strong>（股东看什么：ROE、利润增长）、<strong>客户</strong>（市场份额、满意度、留存）、<strong>内部流程</strong>（效率、质量、交付周期）、<strong>学习与成长</strong>（员工培训、留任、系统能力）＋<strong>可持续/环境</strong>（第 4/5 代模型加的：ESG 指标）。答题格式固定：Perspective | Goal | Measure 三列表，每视角一个目标＋一个可量化指标，指标尽量从案例年报里找得到数。</p>
+  <h4 contenteditable="false">分部绩效：ROI、RI、EVA</h4>
+  <p><strong>ROI</strong>＝分部利润÷分部投资——直观可比，但有<strong>反功能激励</strong>：ROI 25% 的分部会拒绝回报 18% 的好项目（高于资金成本却拉低自己均值）。<strong>RI（剩余收益）</strong>＝分部利润 − 投资×资金成本——消除了这个毛病，大于零的项目都值得做，但绝对额没法跨规模比较。<strong>EVA</strong>＝税后净营业利润 − 投资×加权资金成本，是 RI 的精细版。跨国分部要先<strong>统一币种</strong>再比（2018.08 三国题）。</p>
+  <h4 contenteditable="false">转移定价</h4>
+  <p>分部间内部交易的计价。三种基准：<strong>市场价</strong>（有活跃外部市场时最优）、<strong>成本加成</strong>（变动成本或全额成本＋利润）、<strong>协商价</strong>。选择时考虑的因素：卖方有无闲置产能（有闲置→变动成本即可；满产→要含机会成本）、目标一致性、各分部考核公平、税务（跨国时转移价影响各国纳税）。</p>
+</div>
+
+<h3 contenteditable="false">11. Topic 11 — 前沿议题：战略、IT、伦理（每卷 10–15 分的理论碎分）</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">管理会计如何支撑战略</h4>
+  <p>三个阶段各有工具：<strong>分析</strong>（成本结构、竞争对手成本、SWOT 的财务量化）→ <strong>制定</strong>（CVP 测算备选方案、资本预算排序、定价策略）→ <strong>实施与控制</strong>（预算落实资源、BSC 跟踪执行、差异分析纠偏）。</p>
+  <h4 contenteditable="false">运营改进工具箱（名词解释高频区）</h4>
+  <p><strong>JIT</strong>：按需生产、近零库存——省仓储与资金占用，代价是供应链一断就停产。<strong>TQM</strong>：全员、全过程的质量管理，质量成本分四类（预防/鉴定/内部失败/外部失败）。<strong>六西格玛 DMAIC</strong>：Define 定义问题 → Measure 测量现状 → Analyze 分析根因 → Improve 改进 → Control 固化——答题按五步套任何流程改进场景。<strong>Kaizen</strong>：持续的小步改善，全员参与。<strong>精益五步</strong>（考过三次）：①定义客户眼中的<strong>价值</strong> → ②绘制<strong>价值流</strong>识别浪费 → ③让流程<strong>流动</strong>起来 → ④由需求<strong>拉动</strong>生产 → ⑤追求<strong>尽善尽美</strong>循环改进。</p>
+  <h4 contenteditable="false">AI 与大数据（2023/2024 连考）</h4>
+  <p>AI 在 FAR/MA 的用途（答四个）：自动记账与凭证识别、异常与舞弊检测、预测（现金流/销量）、智能报告生成。<strong>Big Data</strong>＝超出传统软件处理能力的海量多源数据（Volume/Velocity/Variety）。<strong>预测性分析</strong>回答「将会发生什么」（如预测客户流失），<strong>处方性分析</strong>回答「该怎么办」（如给出最优定价）——举例时一句话配一个场景即可。</p>
+  <h4 contenteditable="false">伦理与舞弊（2022 真题 9 分，2016 整卷）</h4>
+  <p>舞弊动机三件套：业绩压力（保股价/奖金/融资）、机会（内控弱、治理失效）、合理化借口。治理机制：独立审计委员会与外部审计、内控与举报渠道、监管处罚、管理层诚信文化。职业操守五项：正直、客观、专业胜任、保密、职业行为。Molex 案例（2016 卷）的教训：管理层发现差错不告知审计师——哪怕金额「不重要」，隐瞒本身就破坏了与审计师的信任关系。</p>
+</div>
+
+<div class="answer" contenteditable="false"><strong>整门课一句收束</strong>：上半场教你把企业活动<strong>如实翻译成报表</strong>并读出含义，下半场教你用成本—贡献—预算—差异这套语言<strong>向前管理</strong>。考试的四道题恰好是这四个能力的抽查：读年报（Q1）、编报表（Q2）、算成本与预算（Q3）、做决策（Q4）。</div>
+
 <h2 contenteditable="false">真题库 · 历年试卷与考点映射（2015–2024，共 11 份）</h2>
 
 <p class="meta" contenteditable="false">试卷原件都在仓库 materials/ 目录 · 3 小时 · Q1 必答 50 分 + Section B 三选二各 25 分（2016 年为四选二）</p>
@@ -3321,11 +3671,147 @@
 </div>
 
 
+<h3 contenteditable="false">四、真题分类汇编 — 原题＋答案（按题型练）</h3>
+
+<p class="meta" contenteditable="false">以下把 11 份试卷里的题目按题型合并整理：同类题只收代表版本（注明年份与重出记录），数据照录原卷，附完整解答或解题路线。配合上面「三、复习清单」勾着练。</p>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型① Q1 年报案例四连击（11/11 卷必考，50 分）</h4>
+  <p><strong>标准四问</strong>（以 2024 卷为代表）：(a) 概括主业（2–5 分）→ (b) 关键项目两年对比表＋变动原因（18–26 分，表头固定：Item | 年1 | 年2 | Change | Possible reason）→ (c) 算比率并点评（2024 年考 8 对：总资产周转、净利率、ROI、现金资产回报、流动比率、速动比率、资产负债率、债务权益比）→ (d) BSC 五视角评绩效（10 分，表头：Perspective | Goal | Evaluation supported with a measure）。</p>
+  <p><strong>解题模板</strong>：(b) 每类要素（收入/费用/资产/负债/权益）挑金额最大、变动最明显的最多 3 项；原因从 MD&amp;A 和常识找（量价、扩张、融资、减值）。(d) 五视角各一行，measure 尽量用年报里真有的数字。笔记里的 TotalEnergies 案例章就是全套模板。</p>
+  <p><strong>年度变体</strong>：2023 在 (c) 处改考 <strong>IAS 2 进口定价</strong>（见题型⑫）；2018.08 在 (c) 处改考<strong>保险公司经营预算</strong>（各收入费用行按给定增长率滚动，汇出预算利润）；2015 的 (a) 问「五项活动」、(d) 问非财务指标；2016 整卷特殊（见题型⑬）。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型② 试算平衡表 → 三大报表（7 卷考过；代表：Westmall，2024＝2021.12 原题）</h4>
+  <p><strong>原题（2024 Q2，25 分）</strong>：Westmall Limited 2023.12.31 试算表（单位 sh.m）——股本 350（面值 10）、7% 优先股 100、股本溢价 171、期初留存 202、10% 债券 200、土地 150、建筑 250、家具设备 620、车辆 240、累计折旧（建筑 20/家具 170/车辆 52）、期初存货 190、销售 2,695、购货 2,152、长期金融资产 50、优先股利 7、普通股利 25、已付债券利息 10、投资收益 5、行政费 160、营销配送费 31、其他运营费 53、已付税 20、新股发行收款 120（发行价 15）、应收 179、应付 185、银行 127、现金 6。</p>
+  <p><strong>调整事项</strong>：①期末存货 210；②应计/预付（行政应计 16 预付 4；营销应计 1；其他应计 6 预付 2）；③债券利息半年一付，12.31 一期未付（补提 10）；④土地重估到 160；⑤折旧按成本：建筑 2%→行政、家具 25%→行政、车辆 20%→配送；⑥新股按 50% 溢价入账（未过账：股本 80＋溢价 40）；⑦全年税估 25（已付 20，差 5 挂应付）。要求编 SPL、SCE、SFP ＋ 理论小尾巴（2024 问 AI 四用途）。</p>
+  <div class="answer"><strong>解题路线（45 分钟内的固定动作）</strong>：① COS ＝ 190＋2,152−210 ＝ 2,132，毛利 ＝ 2,695−2,132 ＝ 563；② 算三项折旧（建筑 5、家具 155、车辆 48）按指定归类；③ 费用行 ＝ TB 数 ＋应计 −预付 ＋归入的折旧；④ 利息费用全年 20（已付 10＋应计 10）；⑤ 税费用 25；⑥ SCE：期初各列 → 加净利、新股（股本 80/溢价 40）、重估 10 → 减股利 32；⑦ SFP 两头验平。<strong>检查链</strong>：净利进 SCE，SCE 期末权益＝SFP 权益，应计/应付税/应付利息都在流动负债。变体卷的新考点：Zest（2022）有 ECL 和「分期还款的贷款要把一年内到期的 20 拆进流动负债」；Winston（2021.01）有坏账核销＋ECL 调整＋未入账股利要直接调减银行存款；Wislon（2015）从交易记录白手建账；Wemo（2017）从残缺记录用「期末净资产−期初净资产＋提款」倒推利润。</div>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型③ 回归读表（4 卷同一张输出表：2017 / 2021.12 / 2022 / 2024）</h4>
+  <p><strong>原题数据（2022 Q3a，广告费 X 对收入 Y，12 个月）</strong>：X 在 100,000–400,000 之间，Y 在 3M–7M 之间。回归输出：<span class="cn">Intercept ＝ 2,333,333.33（Lower95% 871,590 / Upper95% 3,795,076）；Slope ＝ 10（Lower95% 4.0735 / Upper95% 15.9265）；R² ＝ 0.5857；F ＝ 14.13，Significance F ＝ 0.0037</span>。</p>
+  <p><strong>(i) 广告给 500,000，收入会超 7M 吗？</strong>　Y ＝ 2,333,333 ＋ 10 × 500,000 ＝ <strong>7,333,333 &gt; 7M ✓</strong>。但要加一句：X＝500,000 超出样本范围（最大 400,000），属于外推，置信度打折。</p>
+  <p><strong>(ii) X＝400,000 时收入的 95% 置信区间</strong>：用系数区间上下限代入——下限 ＝ 871,590 ＋ 4.0735×400,000 ≈ <strong>Sh 2,500,979</strong>；上限 ＝ 3,795,076 ＋ 15.9265×400,000 ≈ <strong>Sh 10,165,687</strong>。即有 95% 把握收入落在约 2.5M–10.2M 之间（区间宽说明模型精度有限）。</p>
+  <p><strong>(iii) 可靠性怎么评</strong>：R²＝0.586——广告只解释了 58.6% 的收入变动，还有 41.4% 由其他因素决定；F＝14.13 且 p＝0.0037 &lt; 0.05——线性关系整体显著；t 值均 &gt; 2——系数显著非零；但样本只有 12 个月、区间外外推不可靠、相关不等于因果。</p>
+  <p><strong>2024 变体</strong>（轮胎厂，输出表数字同构但量级不同：Intercept 233,333,333，Slope 1,000）：(i) 40 万条轮胎总成本 ＝ 233,333,333 ＋ 1,000×400,000 ＝ <strong>Sh 633,333,333</strong>；(iii) 「同思路但数学更简单的替代方法」＝ <strong>高低点法</strong>——不优于回归：只用两个极端点、易受异常值影响、无统计检验，胜在快。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型④ 盈亏平衡 / CVP（5 卷）</h4>
+  <p><strong>(A) 双产品保本（2023 Q3c 轮椅）</strong>：HFG1003 售 30,000 变 15,000 销 1,200 件；HFG1004 售 20,000 变 11,000 销 600 件（量比 2:1）；专属固定 9M＋2.7M，共同固定 3.9M。<br>
+  <strong>解</strong>：单位贡献 15,000 和 9,000。按 2:1 打包：每包贡献 ＝ 2×15,000＋9,000 ＝ 39,000。总固定 ＝ 15.6M ÷ 39,000 ＝ 400 包 → <strong>HFG1003 保本 800 件、HFG1004 保本 400 件</strong>。验证利润表：贡献 800×15,000＋400×9,000 ＝ 15.6M − 固定 15.6M ＝ 0 ✓。</p>
+  <p><strong>(B) 单产品全家桶（2018.08 Q3b Speck 办公椅）</strong>：变动成本/件 ＝ 金属 5kg×50＝250 ＋ 塑料 200g×1＝200 ＋ 皮革 2.5m×20＝50 ＋ 泡棉 0.5×100＝50 ＋ 裁剪 40min×60/时＝40 ＋ 组装 20min×10/时＝3.33 ＋ 变动制造费用 40×5kg＝200 ＝ <strong>$793.33</strong>；加成 25% → 售价 <strong>$991.67</strong>；贡献 198.33，贡献率 20% → 保本额 ＝ 2,000,000 ÷ 0.2 ＝ <strong>$10,000,000</strong>。再背五假设（见总结章 Topic 7）。</p>
+  <p><strong>(C) 服务业保本价（2021.01 Q3b 酒店）</strong>：先算全年入住「房晚」：单人房 80 间——旺季 20 周×7×80×100%＝11,200，淡季 30 周×7×80×70%＝11,760，合计 22,960 晚；双人房 40 间——旺季 5,600，淡季 30×7×40×60%＝5,040，合计 10,640 晚。设单人价 x，双人价 1.5x，变动成本单 4,500/双 7,500，固定 50M：22,960(x−4,500)＋10,640(1.5x−7,500) ＝ 0 → 38,920x ＝ 233,120,000 → <strong>x ≈ Sh 5,990，双人房 ≈ Sh 8,985</strong>。要谨慎的原因：入住率是估计、淡旺季结构变化、价格本身影响需求。</p>
+  <p><strong>(D) 预算三表＋保本（2018.12 Q3b Tottler 水壶）</strong>：单位贡献 ＝ 2,400−1,650 ＝ 750 → 保本 ＝ 81M ÷ 750 ＝ <strong>108,000 件 ＝ Sh 259.2M</strong>。三张利润表的利润：Master（200,000 件）＝ 69M；Flexible（180,000 件）＝ 54M；Actual ＝ <strong>33.5M</strong> → 与弹性预算比差异 20.5M A（材料/人工/变动费用均超标——逐项可算），与 Master 比的 35.5M「恶化」里有 15M 只是量的问题。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑤ 编预算（5 卷）</h4>
+  <p><strong>(A) 预算利润表（2023 Q3b Remalin）</strong>：与课堂 Example 8.1 同题（真题行政费 50M → 利润 <strong>28,400,000</strong>；讲义版 60M → 18,400,000）。完整解答见 <strong>Topic 8 的 8.W 节</strong>。</p>
+  <p><strong>(B) 弹性预算（2024 Q3b Diamond）</strong>：与课堂 Example 8.2 同构。真题版实际利润 $400,000 vs 弹性预算 500,000 ＝ <strong>100,000 A</strong>（虽超静态预算 60,000）；三条原因照 8.2 的清单写。(iii) 保本 ＝ 140,000÷160 ＝ <strong>875 件 ＝ $437,500</strong>。</p>
+  <p><strong>(C) 现金预算（2017 Q4a(ii) Cross Ltd，9 分）</strong>：新公司 8 月开业卖厨电，要编 10–12 月现金预算。<br>
+  收款规律：当月 60%＋次月 20%＋隔月 15%（5% 坏账）→ 收款：10 月 ＝ 60%×11,400＋20%×6,000＋15%×6,000 ＝ <strong>8,940</strong>；11 月 ＝ 10,080＋2,280＋900 ＝ <strong>13,260</strong>；12 月 ＝ 11,160＋3,360＋1,710 ＝ <strong>16,230</strong>（千 Sh）。<br>
+  付款（购货次月付，单价 600 → 10.1 起 720 → 11.1 起 900）：10 月付 9 月购货 5,000×600 ＝ 3,000；11 月付 9,000×720 ＝ 6,480；12 月付 20,000×900 ＝ <strong>18,000</strong>。<br>
+  其他：行政费每月 2,400；租约每季初付 900（本季度落在一次）；12 月交税 4,500＋购车 6,000。期初（9.30）银行 500。<br>
+  <strong>结果</strong>：10 月末 ≈ 4,040 → 11 月末 ≈ 7,520 → 12 月末 ＝ <strong>−7,150（透支）</strong>——这正是银行要看的：12 月的大额购货付款＋税＋购车把现金打穿，需要约 7.2M 的透支额度。透支利息 24%/年按月计、次月扣，所以本预算期内无利息。</p>
+  <p><strong>(D) 理论配套</strong>：预算成功因素（2023/2018.12/2015 反复考，答 3–5 条：高层支持、参与式编制、目标现实可达、及时反馈与差异跟进、与激励挂钩）；增量 vs ZBB（2017）、传统 vs 滚动（2021.01）——对比各一利一弊，见总结章 Topic 8。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑥ 受限资源产品组合 — Copy Fox（2015 / 2021.01 / 2022 三连考，25 分）</h4>
+  <p><strong>原题</strong>：三型号打印机（2015 年叫扫描仪），现产 100,000 / 50,000 / 60,000 件。售价 12,000 / 20,000 / 22,500；直接材料 3,000 / 9,000 / 6,000；变动制造费用 1,500 / 4,000 / 4,500。三部门人工（费率 200 / 400 / 300 每时）：PN001 需 3/1/5 时，PN002 需 4/2.5/7 时，PN003 需 6/4/9 时。<strong>部门 2 人工无法增加</strong>。固定费用 500M。市场上限 125,000 / 75,000 / 80,000 件。</p>
+  <div class="answer">
+    <strong>解：</strong>① 人工成本/件 ＝ PN001 600＋400＋1,500＝2,500；PN002 800＋1,000＋2,100＝3,900；PN003 1,200＋1,600＋2,700＝5,500。<br>
+    ② 变动成本合计 ＝ 7,000 / 16,900 / 16,000 → <strong>单位贡献 ＝ 5,000 / 3,100 / 6,500</strong>。<br>
+    ③ 现有组合利润 ＝ 100,000×5,000 ＋ 50,000×3,100 ＋ 60,000×6,500 − 500M ＝ 500M＋155M＋390M−500M ＝ <strong>Sh 545M</strong>。<br>
+    ④ 瓶颈＝部门 2 工时，现有总量 ＝ 100,000×1＋50,000×2.5＋60,000×4 ＝ <strong>465,000 时</strong>。<strong>每瓶颈工时贡献</strong> ＝ PN001 5,000/1＝5,000；PN002 3,100/2.5＝1,240；PN003 6,500/4＝1,625 → 优先级 <strong>PN001 → PN003 → PN002</strong>（注意：若按单位贡献排序会错把 PN003 排第一）。<br>
+    ⑤ 最优组合：PN001 顶到市场上限 125,000 件（耗 125,000 时）→ PN003 顶到 80,000 件（耗 320,000 时）→ 余 20,000 时给 PN002 ＝ <strong>8,000 件</strong>。<br>
+    ⑥ 最优利润 ＝ 625M＋520M＋24.8M−500M ＝ <strong>Sh 669.8M</strong>（比现状多 124.8M）。<br>
+    ⑦ 其他考虑（2015 版多这一问）：砍 PN002 产量对客户组合与声誉的影响、三产品是否互补销售、工时能否外包或加班突破瓶颈。
+  </div>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑦ 自制 vs 外购（4 卷）</h4>
+  <p><strong>(A) Specks Motors（2021.12 / 2024 原题重出）</strong>：现自制 10,000 件/年，账面总成本 £360,000（£36/件）：材料 120,000、人工 100,000、变动制造费用 10,000、固定制造费用 80,000、分摊的非制造费用 50,000。外购报价 £30/件。若外购：人工裁撤无遣散费，材料与变动费用可免，固定制造费用只省 £10,000，非制造费用不变，产能无他用。<br>
+  <strong>解</strong>：自制的<strong>可避免成本</strong> ＝ 120,000＋100,000＋10,000＋10,000 ＝ <strong>£240,000（£24/件）</strong> &lt; 外购 £300,000（£30/件）→ <strong>继续自制</strong>，外购每年多花 £60,000。账面 £36 里的 £7 固定费＋£5 分摊费是陷阱——关了也省不掉。(ii) 转移定价三种价：市场价、成本基础（变动/全额＋加成）、协商价；两因素：卖方产能松紧（决定是否含机会成本）、目标一致性与税务。</p>
+  <p><strong>(B) Mumias 纺织（2017 Q4b）</strong>：三种布的可避免成本（材料＋人工＋直接费用，分摊固定费会转移不消失）vs 外购价：Cotton 2,800 vs 2,750 → <strong>外购</strong>（省 50/卷×20,000 卷＝1M）；Silk 3,400 vs 4,200 → 自制；Linen 1,600 vs 2,000 → 自制。只外购 Cotton。</p>
+  <p><strong>(C) Muuguzi 医院（2018.12 Q4b）</strong>：三个亏损科室，外包的得失 ＝（供应商给的贡献＋省下的直接费用）vs 失去的现有贡献：药房 9,000 vs 10,000 → 留；影像 1,500 vs 2,000 → 留；微生物 1,200 vs 1,000 → <strong>外包（＋200）</strong>。「科室整体亏损」是分摊费用造成的幻觉，决策只看可避免项。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑧ 关停决策（3 卷）</h4>
+  <p><strong>(A) Spiral 银行五分行（2023 Q4a）</strong>：五分行合计报亏。若关店：收入仍可保住 25%（客户转移），运营成本有 20% 转由他行承担（即仍发生）。<br>
+  <strong>解（合计口径）</strong>：五分行收入合计（净利息＋其他）＝ 3,570m，关店<strong>失去</strong> 75% ＝ 2,677.5m；运营费用合计 3,200m，关店<strong>只省</strong> 80% ＝ 2,560m；「其他分摊费用」1,040m 是总部分摊，关不关都在，<strong>不相关</strong>。失去 2,677.5 &gt; 省下 2,560 → 关店反而净恶化 <strong>117.5m</strong> → <strong>不应关</strong>（逐分行算同理，可找出个别例外）。两个考虑因素：客户关系与网点覆盖的战略价值、员工安置与品牌声誉。</p>
+  <p><strong>(B) National Ltd 关 Kisumu 区（2018.08 Q4c）</strong>：Kisumu 报亏 56,000（千）。关店失去的贡献 ＝ 毛利 400,000 − 变动的销售员差旅 80,000 − 仓库变动部分 18,000 ＝ 302,000；省下的可避免固定费 ＝ 销售员工资 120,000＋销售行政 80,000＋广告 50,000 ＝ 250,000；总部行政与仓库固定部分不可避免。失去 302,000 &gt; 省 250,000 → <strong>不关，否则利润再降 52,000</strong>。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑨ 特殊订单（2018.12 Q1c，藏在 Q1 里）</h4>
+  <p><strong>原题</strong>：轮胎年产 4,000 条，售价 15,000；变动制造成本 30M（＝7,500/条），固定制造 18.75M；变动销售（运输＋佣金）3M，固定销售 6M。卢旺达经销商求购 1,000 条 @11,250，运费他出、无佣金，产能足够且不增固定费。营销总监嫌价低拒单。<br>
+  <strong>解</strong>：此单的相关成本只有变动制造 7,500/条（运输佣金都不发生，固定费不变）。11,250 − 7,500 ＝ 3,750/条 × 1,000 ＝ <strong>增利 Sh 3.75M → 总监错了，该接</strong>。附加考虑：出口市场与本地市场隔离、不会拉低本地价；若未来产能紧张则要算机会成本。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑩ 服务定价（3 卷）</h4>
+  <p><strong>(A) Jumbojet 机票（2021.01 Q3a）</strong>：50 座，上座率 90%（45 人/班），每天 2 个往返（4 个单程航段）×340 天，单程 425 km。按 km 的成本：燃油 400＋维修 150＋折旧 250 ＝ 800/km → 年 ＝ 578,000 km × 800 ＝ 462.4M；年固定：执照 0.02M＋保险 1M＋机组 6M＋分摊 2M ＝ 9.02M。年单程人次 ＝ 45×4×340 ＝ 61,200。<br>
+  <strong>路线</strong>：每单程人次分摊成本 ＝ 471.42M ÷ 61,200 ≈ 7,703 ＋ 餐食 500 ＋ 单程佣金 1,500 ≈ 9,703 → 加利 10% ≈ 10,674 → 含 10% 税 ≈ <strong>Sh 11,700 左右（单程）</strong>；往返 ＝ 2×(7,703＋500)＋佣金 2,500 ≈ 18,907 → ×1.1 利 → 5% 折扣 → ×1.1 税 ≈ <strong>Sh 21,700 左右</strong>。<span class="unsure">折扣与税的先后顺序题面未定死，答题写明口径即可。</span>(iii) 传统 vs 滚动预算对比见总结章 Topic 8。</p>
+  <p><strong>(B) 医院病床（2015 Q3b）</strong>：床日数 ＝ 普通 40 房×50 床×365×80% ＝ 584,000；私人 20×5×365×70% ＝ 25,550。归集：餐费直接（恰好普通 $4/床日、私人 $10/床日）；房管费 $12/$20 每房每日；间接费 720,000 按 60:40、另 200,000 对半。<br>
+  <strong>解</strong>：普通 ＝ (2,336,000＋175,200＋532,000) ÷ 584,000 ＝ 5.21 → 加价 10% ＝ <strong>$5.73/床日</strong>；私人 ＝ (255,500＋146,000＋388,000) ÷ 25,550 ＝ 30.90 → 加价 20% ＝ <strong>$37.08/床日</strong>。考虑因素：支付能力与公益使命、竞争对手价格、入住率波动。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑪ ABC vs 传统（2017 / 2022 同一结构）</h4>
+  <p><strong>原题（2022 Q3b，四产品）</strong>：产量 120/100/80/120，机器时/件 4/3/2/3；总制造费用 260M 分五池（机器部 100.43M、调机 52.5M、收料 36M、质检 21M、搬运发运 46.2M）。生产批量 20 件/批、销售 10 件/单；每产品领料单 20 张、总订单 42 张。</p>
+  <div class="answer"><strong>路线</strong>：传统法——总机器时 ＝ 480＋300＋160＋360 ＝ 1,300 时 → OAR ＝ 260M ÷ 1,300 ＝ 200,000/时，按各产品机器时分摊。ABC——先算动因量：生产批次 ＝ 产量÷20 ＝ 6/5/4/6（共 21 批）、领料 80 张、订单 42 张；动因费率 ＝ 调机 2.5M/批、质检 1M/批、收料 450K/张、搬运 1.1M/单、机器部 77,254/机器时；再按各产品的动因消耗分摊，÷产量得单位成本，加 50% markup 得价。<strong>结论题眼</strong>：ABC 对「小批量、高折腾」的产品（批次多、机器时少的 Chicken Wire Mesh 类）更公平——传统法按机器时会让大批量产品补贴它们。2016 卷 Q3b 是另一套 ABC 数据（P/Q/R 三产品、六费用池），方法完全相同。</div>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑫ ROI / RI 与进口成本（独立小计算）</h4>
+  <p><strong>(A) 三国子公司 RI 排名（2018.08 Q4b）</strong>：先统一成 Ksh（÷36 / ÷20）：三国投资额都恰好 ＝ Ksh 75,000（千）；NOPAT ＝ 肯尼亚 20,000、乌干达 15,000、坦桑尼亚 17,000。资本成本 12%×75,000 ＝ 9,000。<strong>RI ＝ 肯尼亚 11,000 &gt; 坦桑 8,000 &gt; 乌干达 6,000</strong>（ROI 同序：26.7% / 22.7% / 20%）。考点：先换汇再比、RI ＝ 利润−投资×资本成本。</p>
+  <p><strong>(B) IAS 2 进口平板定价（2023 Q1c）</strong>：买价 ¥10M × 95%（贸易折扣先扣）× 20 ＝ 190M ＋ 运保 1M ＋ 清关与不可退税 1.5M ＝ <strong>存货成本 192.5M ÷ 5,000 ＝ Sh 38,500/台</strong>（IAS 2 口径：仓储与后续配送不入存货）。为定价目的再加运输 1,000＋卸货 500＋仓储 500 ＝ 单位全成本 <strong>40,500</strong> → 20% margin：售价 ＝ 40,500 ÷ 0.8 ＝ <strong>50,625</strong> → 加 VAT 16% ＝ <strong>Sh 58,725/台（含税）</strong>。<span class="unsure">若按 markup 口径：40,500×1.2×1.16 ＝ 56,376——写明口径。</span></p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑬ 2016 特别卷（Molex 年 — 整卷风格独一份，但概念仍在考纲内）</h4>
+  <p><strong>Q1 Molex 舞弊案（HBS 案例，50 分）</strong>：存货利润差错 800 万美元，管理层以「不重要」为由不告知审计师。答题主线：审计师在意的不是金额而是<strong>管理层诚信</strong>——知情不报破坏信任 → 审计师要求撤换 CFO 合理 → 董事会应权衡「挺管理层」对审计关系与市场信心的代价（对应总结章 Topic 11 伦理节）。</p>
+  <p><strong>Q2 预测报表</strong>：销量 +1/3、GP margin 30%、应收＝1 个月销售额、应付＝1.5 个月购货、费用按给定增长率、折旧单列——逐行滚动出 2016 预测 SPL 与 SFP，再评预测的盈利与流动性、是否给透支额度。考点＝预算利润表的另一种皮。</p>
+  <p><strong>Q4 五行业辨报表</strong>：给五家 NSE 公司报表猜行业。判别特征：<strong>银行</strong>——巨额「应收/贷款」、无存货、吸储负债大；<strong>保险</strong>——保费收入＋浮存金投资、理赔准备金负债；<strong>农业</strong>——生物资产；<strong>制造</strong>——存货与 PPE 都重；<strong>电信</strong>——PPE 极重、存货几乎为零、毛利率高（题中 Case A 收入 195,685m、EBIT 利润率 42% 即典型电信）。</p>
+</div>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">题型⑭ 理论碎分题总清单（每卷 10–15 分，考前打包背）</h4>
+  <table>
+    <thead><tr><th style="width:44%">考过的理论题</th><th style="width:18%">年份</th><th>答案在哪</th></tr></thead>
+    <tbody>
+      <tr><td>AI 在 FAR/MA 的四个用途</td><td>2024</td><td>总结章 T11 / Topic 11 §</td></tr>
+      <tr><td>Big Data 定义＋预测性 vs 处方性分析</td><td>2023</td><td>总结章 T11</td></tr>
+      <tr><td>舞弊动机×3、治理机制×3、职业操守×3</td><td>2022 / 2016</td><td>总结章 T11 伦理节</td></tr>
+      <tr><td>精益五步（举例）</td><td>2022 / 2023</td><td>总结章 T11</td></tr>
+      <tr><td>JIT / TQM＋六西格玛 DMAIC / Kaizen</td><td>2024 / 2018.12 / 2018.08</td><td>总结章 T11</td></tr>
+      <tr><td>MA 如何支撑战略（分析/制定/实施）</td><td>2021.01 / 2018.12</td><td>总结章 T11</td></tr>
+      <tr><td>质量特征：2 基础＋3 增强</td><td>2018.08</td><td>总结章 T3</td></tr>
+      <tr><td>监管五来源</td><td>2017</td><td>总结章 T3</td></tr>
+      <tr><td>年报附加报告（MD&amp;A/治理/可持续/审计）内容与意义</td><td>2021.01 / 2015</td><td>总结章 T4</td></tr>
+      <tr><td>预算成功因素 3–5 条</td><td>2023 / 2018.12 / 2015</td><td>总结章 T8 / 题型⑤(D)</td></tr>
+      <tr><td>增量 vs ZBB；传统 vs 滚动</td><td>2017 / 2021.01 / 2016</td><td>总结章 T8</td></tr>
+      <tr><td>相关成本三特征（举例）</td><td>2015</td><td>总结章 T9</td></tr>
+      <tr><td>成本分类（按性态×3 / 五类成本概念举例）</td><td>2018.08 / 2016</td><td>总结章 T6</td></tr>
+      <tr><td>BSC 五视角（第 4/5 代模型）</td><td>几乎每卷 Q1(d)；2018.12 Q4c 单独考</td><td>总结章 T10</td></tr>
+      <tr><td>FAR 软件的五个作用</td><td>2023</td><td>Topic 11（自动记账、合规报表、内控、分析、协同）</td></tr>
+      <tr><td>五假设（盈亏平衡）</td><td>2018.08</td><td>总结章 T7</td></tr>
+      <tr><td>财务报表编制流程描述</td><td>2018.12</td><td>总结章 T2 流水线</td></tr>
+    </tbody>
+  </table>
+</div>
+
 </div>
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-09-29-full-course-v1';
+const NOTES_VERSION = '2026-10-31-summary-exambank-v1';
 
 function toggleEdit() {
   editMode = !editMode;
