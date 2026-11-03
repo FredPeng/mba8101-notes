@@ -3124,62 +3124,235 @@
 
 <h2 contenteditable="false">Topic 9 — MA and Decision Making（管理会计与决策）</h2>
 
-<p class="meta" contenteditable="false">课件：Topic 9 MBA FMA Decision Making（33 页）· 相关成本八原则 · 四大决策场景（产品组合 / 自制外购 / 关停 / 特殊订单），每个都有完整例题</p>
+<p class="meta" contenteditable="false">课件：Topic 9 MBA FMA Decision Making（33 页，全部内容已展开）· 一个过滤器（相关成本八原则）＋ 四个决策场景，每个场景：判据 → 完整例题逐步算 → 陷阱 → 定性因素 · 对应真题：Copy Fox（题型⑥）、Specks（⑦）、Spiral 银行（⑧）、轮胎特单（⑨）</p>
 
-<h3 contenteditable="false">9.1 相关成本八原则（决策的过滤器）</h3>
+<h3 contenteditable="false">9.0 这一章在解决什么问题</h3>
 
 <div class="box" contenteditable="false">
+  <p>前面几章教你<strong>算成本</strong>（Topic 6）、<strong>算保本</strong>（Topic 7）、<strong>做计划</strong>（Topic 8）；这一章教你<strong>做选择</strong>：在几个备选方案里挑出对公司最有利的那个。课件的定义：决策就是用相关成本、相关收入、盈利性和资源约束去评估备选方案、选出最优解。管理会计师的角色不只是「提供数字」，而是直接参与决策——从成本、定价、预算到绩效评估。</p>
+  <p>全章只有一个核心思想，先把它立起来：</p>
+  <div class="formula">做决策时，只比较「会因为这个决策而改变的、未来的现金流」。<br>其他一切数字——不管账面上写得多大——都是噪音。</div>
+  <p>为什么强调这个？因为会计报表是为「如实记录过去」设计的（财务会计的目标），里面充满了分摊、折旧、历史成本——这些对记录是必要的，对决策却是干扰。<strong>决策面向未来，报表记录过去</strong>，直接拿报表数字做决策，是这一章要纠正的头号错误。四个决策场景（产品组合、自制外购、关停、特殊订单）其实是同一个思想在四种情境下的应用。</p>
+</div>
+
+<h3 contenteditable="false">9.1 过滤器：相关成本八原则（逐条讲）</h3>
+
+<div class="box" contenteditable="false">
+  <p>拿到任何决策题，第一步都是把题目给的一堆成本「过筛」——哪些相关、哪些无关。课件给了八条原则，逐条解释：</p>
   <table>
-    <thead><tr><th style="width:50%">✅ 永远相关</th><th>❌ 永远不相关</th></tr></thead>
+    <thead><tr><th style="width:24%">原则</th><th>意思与例子</th></tr></thead>
+    <tbody>
+      <tr><td><strong>① 只看未来</strong> Future costs</td><td>只有未来的成本和收入会被决策改变。<strong>已经花掉的钱（沉没成本）无论选哪个方案都回不来</strong>，所以不参与比较。例：为某产品已投入的研发费 100 万——不管继续做还是砍掉，这 100 万都没了，它不该影响「砍不砍」。</td></tr>
+      <tr><td><strong>② 只看现金</strong> Cash flows</td><td>相关项目必须是真金白银的流入流出。<strong>折旧不是现金</strong>——它只是把过去买设备的钱在账面上摊开，设备钱早付过了。决策时剔除折旧（但注意：如果决策会改变设备的买卖，那笔买卖本身是现金流，相关）。</td></tr>
+      <tr><td><strong>③ 增量</strong> Incremental</td><td>只有「选 A 而不选 B」会<strong>额外</strong>引起的成本/收入才相关。接一张订单要加的包装费是增量成本；不管接不接都要付的厂租不是。</td></tr>
+      <tr><td><strong>④ 可免 vs 不可免</strong> Avoidable</td><td>关掉一条产品线，<strong>省得掉的</strong>成本（专属员工工资、专属广告）相关；<strong>省不掉的</strong>（总部分摊、长租约）无关——它们在任何方案下都照付。</td></tr>
+      <tr><td><strong>⑤ 差异成本</strong> Differential</td><td>两个方案成本的「差」才是决策要看的量。两方案下都一样的项目，比了也白比，直接从两边划掉。</td></tr>
+      <tr><td><strong>⑥ 机会成本</strong> Opportunity</td><td><strong>最容易漏的一条</strong>：选了 A 就放弃了 B，B 本来能带来的收益是选 A 的真实代价——哪怕没有一分钱现金支出。详见下一个框。</td></tr>
+      <tr><td><strong>⑦ 可控性</strong> Controllable</td><td>评价一个经理的业绩，只看他管得着的成本。这条主要服务绩效评估（Topic 10），决策分析里作辅助。</td></tr>
+      <tr><td><strong>⑧ 固定成本要看「会不会变」</strong></td><td>变动成本通常相关（随决策的量变）；固定成本<strong>默认无关，除非这个决策会改变它</strong>——比如接大单需要多租一条生产线，那笔新增固定成本就相关。不要背「固定成本无关」，要问「这笔固定成本会因为我的决定而变吗」。</td></tr>
+    </tbody>
+  </table>
+
+  <h4 contenteditable="false">速查表：永远相关 vs 永远无关</h4>
+  <table>
+    <thead><tr><th style="width:50%">✅ 永远相关</th><th>❌ 永远无关</th></tr></thead>
     <tbody>
       <tr>
-        <td>
-          <ul style="margin:0;padding-left:18px;">
-            <li><strong>未来的</strong>变动成本（材料、人工、变动费用）</li>
-            <li><strong>可免的</strong>固定成本</li>
-            <li><strong>机会成本</strong>——放弃次优方案的收益（没有现金流出也要算！）</li>
-            <li>增量 / 差异成本</li>
-            <li>由该决策引起的新增成本</li>
-          </ul>
-        </td>
-        <td>
-          <ul style="margin:0;padding-left:18px;">
-            <li><strong>沉没成本</strong>（已发生的历史成本）</li>
-            <li><strong>不可免的</strong>固定成本</li>
-            <li><strong>分摊来的</strong>总部/一般费用（决策后照样发生）</li>
-            <li><strong>折旧</strong>（非现金项目）</li>
-            <li>已承诺成本</li>
-          </ul>
-        </td>
+        <td>未来的变动成本（材料、人工、变动费用）· 可免的固定成本 · 机会成本 · 增量/差异成本 · 由决策引起的新增成本</td>
+        <td>沉没成本 · 不可免的固定成本 · 分摊来的总部/一般费用 · 折旧（非现金）· 已承诺成本（合同签了跑不掉的）</td>
       </tr>
     </tbody>
   </table>
-  <div class="term">八原则浓缩成一句话：<strong>只看未来的、有差异的现金流</strong> —— future / cash / incremental / avoidable / differential / opportunity / controllable / 固定成本仅当它会变时才相关。</div>
+
+  <h4 contenteditable="false">专讲机会成本（课件单独给了一页，考题单独给分）</h4>
+  <p>机会成本 ＝ 选了这个方案而<strong>放弃的次优方案的收益</strong>。它反直觉的地方在于：账上永远找不到它（没有现金支出、没有分录），但它是真实的经济代价。课件给了三个场景：</p>
+  <table>
+    <thead><tr><th style="width:22%">场景</th><th>机会成本藏在哪</th></tr></thead>
+    <tbody>
+      <tr><td>自制 vs 外购</td><td>自制占用的产能如果空出来能赚 $20,000，这 $20,000 就是「自制」的机会成本——要加到自制的成本里去比</td></tr>
+      <tr><td>产品组合</td><td>把稀缺的工时给了 A 产品，就是放弃了 B 产品本能赚的贡献——所以才要按「每工时贡献」排序</td></tr>
+      <tr><td>特殊订单</td><td>没有闲置产能时，接特单会挤掉正常销售——被挤掉的正常订单贡献是接单的机会成本；有闲置产能时机会成本为零</td></tr>
+    </tbody>
+  </table>
+  <div class="note"><strong>判断口诀</strong>：有没有闲置资源，决定机会成本是不是零。资源闲着——用它不牺牲任何东西，机会成本 0；资源满负荷——用它必然挤掉别的用途，被挤掉用途的贡献就要计入成本。</div>
 </div>
 
-<h3 contenteditable="false">9.2 四大决策场景（判据 + 例题 + 陷阱）</h3>
+<h3 contenteditable="false">9.2 场景① Product Mix 产品组合：资源不够时先做谁</h3>
 
 <div class="box" contenteditable="false">
-  <h4 contenteditable="false">① Product Mix 产品组合（资源受限）</h4>
-  <div class="answer">判据：按<strong>每单位受限资源的贡献毛益</strong>排序——不是每件的贡献毛益！</div>
-  <p class="meta">例题（ABC 公司，人工 1,000 小时受限）：A 贡献 40/件但耗 2 小时（20/小时）、B 贡献 35/件只耗 1 小时（<strong>35/小时 → 排第一</strong>）、C 贡献 40/件耗 4 小时（10/小时 → 最后）。最优组合：B 全量 400 件 + A 300 件用完工时，C 一件不做，总贡献 $26,000。分摊的厂租/行政/折旧全部不参与计算。</p>
+  <p><strong>问题情境</strong>：市场想买的比你能做的多——某种资源（工时、机器时、关键材料）不够用。该优先生产哪个产品、各做多少？</p>
+  <div class="answer"><strong>判据：按「每单位受限资源的贡献」排序，不是按「每件的贡献」排序。</strong>直觉：稀缺的不是「件数」而是「资源」，所以要问的是「这个产品每吃掉一小时稀缺工时，还给我多少贡献」。</div>
 
-  <h4 contenteditable="false">② Make or Buy 自制或外购</h4>
-  <div class="answer">判据：比较<strong>自制的可免成本 ＋ 产能机会成本</strong> vs 外购价——不是拿全成本比！</div>
-  <p class="meta">例题（XYZ，10,000 件，外购报价 $28）：自制相关成本 ＝ 材料 10 ＋ 人工 8 ＋ 变动费用 4 ＋ 可免固定费用 2.8 ＝ <strong>$24.80</strong>（不可免固定 4.2 和分摊行政 3 剔除）。加产能机会成本 $20,000 后自制共 $268,000，仍低于外购 $280,000 → <strong>继续自制，省 $12,000</strong>。账面单位成本 $36 vs 报价 $28 的表面比较会做出错误决定。</p>
-
-  <h4 contenteditable="false">③ Shut Down 关停</h4>
-  <div class="answer">判据：只有<strong>省下的可免成本 ＞ 失去的贡献毛益</strong>才关——账面亏损不是关停理由！</div>
-  <p class="meta">例题（D 产品线账面亏 $7,000）：但它贡献毛益 +$43,000、关停只省得掉专属固定成本 $30,000 → 关停反而让公司利润<strong>少 $13,000</strong>。账面亏损里的 $20,000 是分摊来的一般固定成本，关了照付。2023 真题 Q4 银行五家分行关停题、2018 医院外包题都是同一逻辑（还要算保留的 25% 收入与转移的 20% 成本）。</p>
-
-  <h4 contenteditable="false">④ Special Order 特殊订单</h4>
-  <div class="answer">判据（黄金法则）：报价 vs <strong>增量成本</strong>——不是报价 vs 正常售价！有闲置产能、价高于增量成本就接；无闲置产能要加被挤掉销售的机会成本。</div>
-  <p class="meta">例题（正常价 $80、产能利用 80%，外商出 $55 买 2,000 件）：增量成本 ＝ 材料 18 ＋ 人工 12 ＋ 变动费用 8 ＋ 专属包装 2 ＝ $40 → 每件赚 $15，共 <strong>+$30,000，应接受</strong>。固定费用 15 和分摊行政 5 与决策无关。</p>
-
-  <h4 contenteditable="false">定性因素（每题都值 2–5 分）</h4>
-  <p>品牌与声誉 · 供应商依赖与质量 · 员工与社区影响 · 战略重要性 · 特价成为客户参照价的风险 · 未来成长潜力——<strong>财务分析给底座，定性因素可以推翻纯数字结论</strong>。</p>
+  <h4 contenteditable="false">完整例题：ABC 公司三产品争 1,000 个工时</h4>
+  <p><strong>题面</strong>：只有 1,000 直接人工小时。分摊厂租（$8/件）、行政（$5/件）、折旧（$4/件）三项对所有产品相同且不可免——先用 9.1 的过滤器把它们筛掉。</p>
+  <p><strong>第一步：算每件的相关成本与贡献</strong>（只留材料、人工、变动制造费用）：</p>
+  <table>
+    <thead><tr><th></th><th class="num">A</th><th class="num">B</th><th class="num">C</th></tr></thead>
+    <tbody>
+      <tr><td>售价</td><td class="num">100</td><td class="num">120</td><td class="num">150</td></tr>
+      <tr><td>直接材料</td><td class="num neg">(30)</td><td class="num neg">(40)</td><td class="num neg">(50)</td></tr>
+      <tr><td>直接人工</td><td class="num neg">(20)</td><td class="num neg">(30)</td><td class="num neg">(40)</td></tr>
+      <tr><td>变动制造费用</td><td class="num neg">(10)</td><td class="num neg">(15)</td><td class="num neg">(20)</td></tr>
+      <tr class="subtotal"><td>单位贡献</td><td class="num">40</td><td class="num">35</td><td class="num">40</td></tr>
+      <tr><td>每件耗工时</td><td class="num">2</td><td class="num">1</td><td class="num">4</td></tr>
+      <tr><td>月最大需求（件）</td><td class="num">300</td><td class="num">400</td><td class="num">200</td></tr>
+    </tbody>
+  </table>
+  <p>注意 A 和 C 每件贡献都是 $40——如果按「每件贡献」排序根本分不出高下，而且会漏掉真正的冠军 B。</p>
+  <p><strong>第二步：换算成「每工时贡献」并排序</strong>：</p>
+  <table>
+    <thead><tr><th></th><th class="num">贡献/件</th><th class="num">工时/件</th><th class="num">贡献/工时</th><th>排名</th></tr></thead>
+    <tbody>
+      <tr><td>B</td><td class="num">35</td><td class="num">1</td><td class="num"><strong>35</strong></td><td>第 1</td></tr>
+      <tr><td>A</td><td class="num">40</td><td class="num">2</td><td class="num">20</td><td>第 2</td></tr>
+      <tr><td>C</td><td class="num">40</td><td class="num">4</td><td class="num">10</td><td>第 3</td></tr>
+    </tbody>
+  </table>
+  <p>看懂反转：B 每件贡献最低（$35），却是最该优先的——因为它「吃资源最省」。C 每件贡献并列最高，却垫底——它每赚 $40 要吃掉 4 小时，这 4 小时给 B 能赚 $140。</p>
+  <p><strong>第三步：按排名分配 1,000 小时，直到用完</strong>：</p>
+  <table>
+    <thead><tr><th></th><th class="num">产量（件）</th><th class="num">耗工时</th><th class="num">累计工时</th><th class="num">贡献</th></tr></thead>
+    <tbody>
+      <tr><td>B（先顶满需求 400 件）</td><td class="num">400</td><td class="num">400</td><td class="num">400</td><td class="num">14,000</td></tr>
+      <tr><td>A（剩 600 时 ÷ 2 ＝ 恰好够 300 件）</td><td class="num">300</td><td class="num">600</td><td class="num">1,000</td><td class="num">12,000</td></tr>
+      <tr><td>C（没工时了）</td><td class="num">0</td><td class="num">0</td><td class="num">1,000</td><td class="num">0</td></tr>
+      <tr class="grand"><td>最优组合总贡献</td><td></td><td></td><td></td><td class="num">$26,000</td></tr>
+    </tbody>
+  </table>
+  <p><strong>为什么全程不碰固定成本</strong>：厂租、行政、折旧不管做哪种组合都照付，它们只影响「最后利润是多少」，不影响「哪个组合最好」——比贡献就够了。</p>
+  <div class="note"><strong>真题对照</strong>：Copy Fox 三连考（2015/2021.01/2022）就是这个模子放大版——瓶颈是「部门 2 工时」，三步完全一样，完整解答在真题库题型⑥。那道题的陷阱一模一样：按单位贡献排序会错把 PN003 排第一（正确答案 PN001 第一）。</div>
 </div>
 
+<h3 contenteditable="false">9.3 场景② Make or Buy 自制还是外购</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>问题情境</strong>：供应商报价看起来比你的「单位成本」便宜，要不要把零件外包？</p>
+  <div class="answer"><strong>判据：外购价 vs（自制的可免成本 ＋ 产能机会成本）。</strong>千万不要拿「账面全成本」去比报价——账面成本里混着外购后照样要付的钱。</div>
+
+  <h4 contenteditable="false">完整例题：XYZ 公司，年产 10,000 件零件 X，外商报价 $28/件</h4>
+  <p><strong>第一步：把账面成本逐项过筛</strong>（这张「Treatment 表」是答题的标准格式，照抄结构）：</p>
+  <table>
+    <thead><tr><th>成本项/件</th><th class="num">$</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td>直接材料</td><td class="num">10.00</td><td>相关——外购就不买料了</td></tr>
+      <tr><td>直接人工</td><td class="num">8.00</td><td>相关——外购就不用这批工人</td></tr>
+      <tr><td>变动制造费用</td><td class="num">4.00</td><td>相关——随产量消失</td></tr>
+      <tr><td>固定制造费用·可免部分（40%）</td><td class="num">2.80</td><td>相关——确实省得掉这部分</td></tr>
+      <tr><td>固定制造费用·不可免部分（60%）</td><td class="num neg">4.20</td><td><strong>无关</strong>——外购了也照付</td></tr>
+      <tr><td>分摊的行政费用</td><td class="num neg">3.00</td><td><strong>无关</strong>——总部费用换个产品继续摊</td></tr>
+      <tr class="total"><td>自制的相关成本/件</td><td class="num">24.80</td><td>（账面全成本是 32.00——差额 7.20 全是陷阱）</td></tr>
+    </tbody>
+  </table>
+  <p><strong>第二步：加上机会成本，比总账</strong>。题目说外购后腾出的产能可以另赚 $20,000 贡献——这是「继续自制」的机会成本：</p>
+  <table>
+    <thead><tr><th></th><th class="num">自制</th><th class="num">外购</th></tr></thead>
+    <tbody>
+      <tr><td>相关生产成本（10,000 件 × 24.80 / × 28）</td><td class="num">248,000</td><td class="num">280,000</td></tr>
+      <tr><td>产能机会成本</td><td class="num">20,000</td><td class="num">—</td></tr>
+      <tr class="grand"><td>相关经济成本</td><td class="num">268,000</td><td class="num">280,000</td></tr>
+    </tbody>
+  </table>
+  <p><strong>结论：继续自制，每年省 $12,000。</strong>表面上看报价 $28 比账面成本 $32 便宜 $4，很诱人；筛掉无关成本后，自制真实代价只有 $24.80，连加上机会成本都还是自制赢。这正是「用全成本做决策」会亏钱的活例子。</p>
+  <p><strong>决策框架三步</strong>（课件 p18）：算可免成本 → 比外购价 → 加产能机会成本。</p>
+  <div class="note"><strong>真题对照</strong>：Specks Motors（2021.12 / 2024 原题重出）结构完全一致——账面 £36 vs 报价 £30，筛完可免成本只有 £24，该自制。完整解答在真题库题型⑦；同题型还有 Mumias 纺织（2017，三产品各自比）和 Muuguzi 医院（2018.12，外包版）。</div>
+</div>
+
+<h3 contenteditable="false">9.4 场景③ Shut Down 关停：亏损的部门该不该砍</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>问题情境</strong>：某条产品线/分部/网点账面亏损，砍不砍？</p>
+  <div class="answer"><strong>判据：只有「省下的可免成本 ＞ 失去的贡献」才关。账面亏损本身不构成关停理由</strong>——因为账面亏损里往往埋着「关了也省不掉」的分摊费用。</div>
+  <div class="formula">关停的净效应 ＝ 省下的专属可免固定成本 − 失去的贡献 ± 其他机会收益<br>（结果为正才值得关）</div>
+
+  <h4 contenteditable="false">完整例题：ABC 公司四条产品线，D 线账面亏 $7,000</h4>
+  <table>
+    <thead><tr><th></th><th class="num">A</th><th class="num">B</th><th class="num">C</th><th class="num">D</th></tr></thead>
+    <tbody>
+      <tr><td>销售收入</td><td class="num">240,000</td><td class="num">180,000</td><td class="num">150,000</td><td class="num">120,000</td></tr>
+      <tr><td>变动成本</td><td class="num neg">(130,000)</td><td class="num neg">(100,000)</td><td class="num neg">(90,000)</td><td class="num neg">(77,000)</td></tr>
+      <tr class="subtotal"><td>贡献</td><td class="num">110,000</td><td class="num">80,000</td><td class="num">60,000</td><td class="num">43,000</td></tr>
+      <tr><td>专属固定成本（可免）</td><td class="num neg">(25,000)</td><td class="num neg">(20,000)</td><td class="num neg">(35,000)</td><td class="num neg">(30,000)</td></tr>
+      <tr><td>分摊的一般固定成本（不可免）</td><td class="num neg">(30,000)</td><td class="num neg">(25,000)</td><td class="num neg">(20,000)</td><td class="num neg">(20,000)</td></tr>
+      <tr class="grand"><td>账面利润/（亏损）</td><td class="num">55,000</td><td class="num">35,000</td><td class="num">5,000</td><td class="num neg">(7,000)</td></tr>
+    </tbody>
+  </table>
+  <p><strong>用公式逐线算关停净效应</strong>（C 线题设关停后另有 $18,000 其他收益）：</p>
+  <table>
+    <thead><tr><th></th><th class="num">失去贡献</th><th class="num">省下可免固定</th><th class="num">其他收益</th><th class="num">关停净效应</th><th>结论</th></tr></thead>
+    <tbody>
+      <tr><td>A</td><td class="num neg">(110,000)</td><td class="num">25,000</td><td class="num">—</td><td class="num neg">(85,000)</td><td>继续</td></tr>
+      <tr><td>B</td><td class="num neg">(80,000)</td><td class="num">20,000</td><td class="num">—</td><td class="num neg">(60,000)</td><td>继续</td></tr>
+      <tr><td>C</td><td class="num neg">(60,000)</td><td class="num">35,000</td><td class="num">18,000</td><td class="num neg">(7,000)</td><td>继续</td></tr>
+      <tr><td>D</td><td class="num neg">(43,000)</td><td class="num">30,000</td><td class="num">—</td><td class="num neg">(13,000)</td><td><strong>继续</strong></td></tr>
+    </tbody>
+  </table>
+  <p><strong>为什么账面亏损的 D 不该关</strong>：D 的 $7,000 亏损里有 $20,000 是分摊来的一般固定成本——关了 D，这 $20,000 会原封不动摊到 A/B/C 头上。D 真实的经济贡献是：每年带来 $43,000 贡献，只需付 $30,000 专属成本，<strong>净贡献 +$13,000</strong>。关掉它，公司整体利润反而少 $13,000——和直觉正好相反。</p>
+  <p>换个角度验证：四线合计利润 ＝ 55,000＋35,000＋5,000−7,000 ＝ $88,000；关掉 D 后 ＝ 贡献(110+80+60)k − 专属(25+20+35)k − 一般固定 95k ＝ $75,000。确实少了 $13,000 ✓。</p>
+  <div class="note"><strong>真题对照</strong>：Spiral 银行五分行（2023 Q4a）多一层包装——关店仍保留 25% 收入、20% 成本转由他行承担，但骨架一样：失去的（75% 收入）vs 省下的（80% 运营成本），分摊总部费用不参与；算出来关店净恶化 117.5m，不关。National Ltd 关 Kisumu 区（2018.08）同理。两题完整解答在真题库题型⑧。</div>
+</div>
+
+<h3 contenteditable="false">9.5 场景④ Special Order 特殊订单：低于正常价的单要不要接</h3>
+
+<div class="box" contenteditable="false">
+  <p><strong>问题情境</strong>：有人出一个<strong>低于正常售价</strong>的价格，下一张一次性大单。接吗？</p>
+  <div class="answer"><strong>黄金法则：比的是「报价 vs 增量成本」，不是「报价 vs 正常售价」。</strong>有闲置产能时，只要报价高于增量成本，接单就是白赚；没有闲置产能时，还要加上被挤掉的正常销售的贡献（机会成本）。</div>
+
+  <h4 contenteditable="false">完整例题：ABC 公司，正常价 $80，产能利用率 80%，外商出 $55 买 2,000 件</h4>
+  <p><strong>第一步：筛出这张订单的增量成本</strong>：</p>
+  <table>
+    <thead><tr><th>成本项/件</th><th class="num">$</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td>直接材料</td><td class="num">18</td><td>相关——多做 2,000 件要多买料</td></tr>
+      <tr><td>直接人工</td><td class="num">12</td><td>相关</td></tr>
+      <tr><td>变动制造费用</td><td class="num">8</td><td>相关</td></tr>
+      <tr><td>固定制造费用</td><td class="num neg">15</td><td><strong>无关</strong>——接不接都照付（产能有空闲，不新增）</td></tr>
+      <tr><td>分摊行政费用</td><td class="num neg">5</td><td><strong>无关</strong>——分摊数字游戏</td></tr>
+      <tr><td>追加包装（此单特有）</td><td class="num">2</td><td>相关——由这张订单引起</td></tr>
+      <tr class="total"><td>增量成本/件</td><td class="num">40</td><td></td></tr>
+    </tbody>
+  </table>
+  <p><strong>第二步：算增量利润</strong>：</p>
+  <table>
+    <thead><tr><th></th><th class="num">每件</th><th class="num">2,000 件</th></tr></thead>
+    <tbody>
+      <tr><td>特单收入</td><td class="num">55</td><td class="num">110,000</td></tr>
+      <tr><td>增量成本</td><td class="num neg">(40)</td><td class="num neg">(80,000)</td></tr>
+      <tr class="grand"><td>增量利润</td><td class="num">15</td><td class="num">30,000</td></tr>
+    </tbody>
+  </table>
+  <p><strong>结论：接单，净赚 $30,000。</strong>「$55 低于正常价 $80」这个事实在财务上完全不重要——正常价是用来覆盖全部成本＋利润的长期价格，而这张<strong>额外</strong>订单只需覆盖它<strong>额外</strong>引起的成本。产能反正闲着，$55 里每件有 $15 是纯增量利润。</p>
+  <p><strong>两个前提要在答题里点明</strong>：①产能有空闲（80% 利用率 → 装得下 2,000 件），否则要加被挤掉销售的机会成本；②特单不冲击现有市场和正常价格（题面明说了）。</p>
+  <div class="note"><strong>真题对照</strong>：2018.12 Q1(c) 轮胎题——卢旺达商人出 11,250（正常价 15,000），营销总监嫌低拒了；实际增量成本只有 7,500（运费佣金都不发生），拒单白扔 3.75M。完整解答在真题库题型⑨。</div>
+</div>
+
+<h3 contenteditable="false">9.6 四个场景一张对照表 ＋ 定性因素</h3>
+
+<div class="box" contenteditable="false">
+  <table>
+    <thead><tr><th style="width:16%">场景</th><th style="width:30%">判据一句话</th><th style="width:27%">最大陷阱</th><th>机会成本出现在</th></tr></thead>
+    <tbody>
+      <tr><td><strong>产品组合</strong></td><td>按每单位受限资源的贡献排序</td><td>按单位贡献排序</td><td>资源给了 A 就给不了 B</td></tr>
+      <tr><td><strong>自制/外购</strong></td><td>外购价 vs 可免成本＋机会成本</td><td>拿账面全成本去比报价</td><td>自制占用的产能本可另作他用</td></tr>
+      <tr><td><strong>关停</strong></td><td>省下的可免成本 ＞ 失去的贡献才关</td><td>看见账面亏损就想关</td><td>腾出的空间/资源的新用途</td></tr>
+      <tr><td><strong>特殊订单</strong></td><td>报价 ＞ 增量成本就接（有闲置产能时）</td><td>拿报价去比正常售价</td><td>无闲置产能时被挤掉的正常销售</td></tr>
+    </tbody>
+  </table>
+
+  <h4 contenteditable="false">定性因素：数字之外的 2–5 分（每道决策题必写）</h4>
+  <p>课件强调：<strong>财务分析给底座，定性因素可以推翻纯数字结论</strong>。四类常写的：</p>
+  <table>
+    <thead><tr><th style="width:26%">类别</th><th>答题常用句</th></tr></thead>
+    <tbody>
+      <tr><td>品牌与声誉</td><td>砍产品线或接低价单可能损害品牌形象、向对手释放示弱信号；特价有成为客户参照价（benchmark）的风险</td></tr>
+      <tr><td>供应商依赖</td><td>外包形成对单一供应商的长期依赖——涨价、断供、质量、保密/知识产权风险</td></tr>
+      <tr><td>员工与社区</td><td>关停影响士气、就业与社区关系，有战略与伦理分量；裁掉的技能再想建回来很贵</td></tr>
+      <tr><td>战略重要性</td><td>今天亏损的业务可能是未来增长、市场卡位或客户留存的关键（如银行的网点覆盖）</td></tr>
+    </tbody>
+  </table>
+
+  <h4 contenteditable="false">全章四句收束（课件 Key Takeaways 原意）</h4>
+  <p>① 只有<strong>未来的、增量的、可免的</strong>成本才相关——沉没、分摊、不可免固定统统剔除；② 产品组合由<strong>每受限资源贡献</strong>驱动，不是每件贡献；③ <strong>机会成本永远相关</strong>，哪怕账上看不见它；④ <strong>账面亏损 ≠ 该关停，价低于正常价 ≠ 该拒单</strong>——决策看相关经济分析，不看账面数字。</p>
+</div>
 
 <h2 contenteditable="false">Topic 10 — Performance Management（绩效管理）</h2>
 
@@ -3811,7 +3984,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-10-31-summary-exambank-v1';
+const NOTES_VERSION = '2026-11-03-topic9-deep-v1';
 
 function toggleEdit() {
   editMode = !editMode;
