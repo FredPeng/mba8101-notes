@@ -3223,6 +3223,84 @@
   <div class="note"><strong>真题对照</strong>：Copy Fox 三连考（2015/2021.01/2022）就是这个模子放大版——瓶颈是「部门 2 工时」，三步完全一样，完整解答在真题库题型⑥。那道题的陷阱一模一样：按单位贡献排序会错把 PN003 排第一（正确答案 PN001 第一）。</div>
 </div>
 
+<h3 contenteditable="false">9.2W 课堂练习 Example 9.1（Zeddy — Product Mix）：原题＋完整解答</h3>
+
+<div class="box" contenteditable="false">
+  <h4 contenteditable="false">原题（讲义照录）</h4>
+  <div class="quote">
+    <p><strong>Example 9.1 (Product mix)</strong></p>
+    <p>Zeddy Limited makes two products i.e. Alpha and Beta and the unit variable costs are as follows.</p>
+    <table>
+      <thead><tr><th></th><th class="num">Alpha $</th><th class="num">Beta $</th></tr></thead>
+      <tbody>
+        <tr><td>Direct material</td><td class="num">10</td><td class="num">30</td></tr>
+        <tr><td>Direct labour ($ 30 per hr)</td><td class="num">60</td><td class="num">30</td></tr>
+        <tr><td>Variable Overhead</td><td class="num">10</td><td class="num">10</td></tr>
+        <tr class="total"><td>Total variable Cost</td><td class="num">80</td><td class="num">70</td></tr>
+      </tbody>
+    </table>
+    <p>The selling price of each unit is $ 140 and $ 110, respectively and the total fixed cost is $ 2,000,000. The demand for the year 2027 is expected to be 30,000 units for Alpha and 50,000 units for Beta.</p>
+    <p>There is a limitation in production capacity and only 80,000 hours of labor are available.</p>
+    <p><strong>Required.</strong><br>
+    (a) Confirm that labor is a limited resource.<br>
+    (b) Recommend an appropriate production mix based on this limitation.<br>
+    (c) The marketing director recommends that the company gives priority to Alpha which has a higher contribution per unit, before making Beta. Prove to the marketing director that this is not optimal for the company by preparing operating statements of profit or loss using your recommended mix and that of the marketing director.</p>
+  </div>
+
+  <h4 contenteditable="false">(a) 证明人工是受限资源</h4>
+  <p>先从人工成本反推每件工时（费率 $30/时）：Alpha 60÷30 ＝ <strong>2 时/件</strong>；Beta 30÷30 ＝ <strong>1 时/件</strong>。满足全部需求所需的工时：</p>
+  <table>
+    <thead><tr><th></th><th class="num">需求（件）</th><th class="num">工时/件</th><th class="num">所需工时</th></tr></thead>
+    <tbody>
+      <tr><td>Alpha</td><td class="num">30,000</td><td class="num">2</td><td class="num">60,000</td></tr>
+      <tr><td>Beta</td><td class="num">50,000</td><td class="num">1</td><td class="num">50,000</td></tr>
+      <tr class="subtotal"><td>合计所需</td><td></td><td></td><td class="num">110,000</td></tr>
+      <tr><td>可用工时</td><td></td><td></td><td class="num">80,000</td></tr>
+      <tr class="grand"><td>缺口</td><td></td><td></td><td class="num neg">(30,000)</td></tr>
+    </tbody>
+  </table>
+  <p>需要 110,000 时 ＞ 可用 80,000 时，缺 30,000 时 → <strong>人工确实是受限资源（limiting factor）</strong>，两种产品无法都做满，必须排优先级。</p>
+
+  <h4 contenteditable="false">(b) 推荐的生产组合：按每工时贡献排序</h4>
+  <table>
+    <thead><tr><th></th><th class="num">Alpha</th><th class="num">Beta</th></tr></thead>
+    <tbody>
+      <tr><td>售价</td><td class="num">140</td><td class="num">110</td></tr>
+      <tr><td>变动成本</td><td class="num neg">(80)</td><td class="num neg">(70)</td></tr>
+      <tr class="subtotal"><td>单位贡献</td><td class="num">60</td><td class="num">40</td></tr>
+      <tr><td>工时/件</td><td class="num">2</td><td class="num">1</td></tr>
+      <tr class="grand"><td>每工时贡献</td><td class="num">30</td><td class="num"><strong>40</strong></td></tr>
+      <tr><td>优先级</td><td class="num">第 2</td><td class="num"><strong>第 1</strong></td></tr>
+    </tbody>
+  </table>
+  <p>Beta 每吃 1 小时还回 $40，Alpha 只还 $30 → <strong>先做满 Beta，剩的工时给 Alpha</strong>：</p>
+  <table>
+    <thead><tr><th></th><th class="num">产量（件）</th><th class="num">耗工时</th><th class="num">累计工时</th></tr></thead>
+    <tbody>
+      <tr><td>Beta（顶满需求）</td><td class="num">50,000</td><td class="num">50,000</td><td class="num">50,000</td></tr>
+      <tr><td>Alpha（余 30,000 时 ÷ 2）</td><td class="num">15,000</td><td class="num">30,000</td><td class="num">80,000</td></tr>
+    </tbody>
+  </table>
+  <div class="answer"><strong>推荐组合：Beta 50,000 件 ＋ Alpha 15,000 件</strong>（Alpha 的需求只能满足一半）。</div>
+
+  <h4 contenteditable="false">(c) 两套组合的利润表对比：证明营销总监错了</h4>
+  <p>营销总监的逻辑是「Alpha 每件贡献 $60 更高，先做 Alpha」：Alpha 30,000 件耗 60,000 时，余 20,000 时只够 Beta 20,000 件。两套组合各编一张利润表：</p>
+  <table>
+    <thead><tr><th>Operating Statement（2027）</th><th class="num">推荐组合<br>Beta 50,000＋Alpha 15,000</th><th class="num">总监组合<br>Alpha 30,000＋Beta 20,000</th></tr></thead>
+    <tbody>
+      <tr><td>销售收入：Alpha @140</td><td class="num">2,100,000</td><td class="num">4,200,000</td></tr>
+      <tr><td>　　　　　Beta @110</td><td class="num">5,500,000</td><td class="num">2,200,000</td></tr>
+      <tr class="subtotal"><td>收入合计</td><td class="num">7,600,000</td><td class="num">6,400,000</td></tr>
+      <tr><td>变动成本：Alpha @80</td><td class="num neg">(1,200,000)</td><td class="num neg">(2,400,000)</td></tr>
+      <tr><td>　　　　　Beta @70</td><td class="num neg">(3,500,000)</td><td class="num neg">(1,400,000)</td></tr>
+      <tr class="subtotal"><td>贡献：Alpha @60 / Beta @40</td><td class="num">2,900,000</td><td class="num">2,600,000</td></tr>
+      <tr><td>固定成本</td><td class="num neg">(2,000,000)</td><td class="num neg">(2,000,000)</td></tr>
+      <tr class="grand"><td>利润</td><td class="num"><strong>900,000</strong></td><td class="num">600,000</td></tr>
+    </tbody>
+  </table>
+  <div class="answer"><strong>结论：推荐组合多赚 $300,000。</strong>这 30 万的来历可以直接验证：两套组合的差异是「30,000 个工时给谁」——给 Beta 每时赚 40、给 Alpha 每时赚 30，差 $10/时 × 30,000 时 ＝ $300,000。单位贡献高（Alpha $60）不等于资源利用效率高——瓶颈下看的是<strong>每工时贡献</strong>（Beta $40 ＞ Alpha $30）。这正是 9.2 节 ABC 例题和真题 Copy Fox（题型⑥）的同一个陷阱。</div>
+</div>
+
 <h3 contenteditable="false">9.3 场景② Make or Buy 自制还是外购</h3>
 
 <div class="box" contenteditable="false">
@@ -3984,7 +4062,7 @@
 
 <script>
 let editMode = false;
-const NOTES_VERSION = '2026-11-03-topic9-deep-v1';
+const NOTES_VERSION = '2026-11-03-topic9-ex91-v2';
 
 function toggleEdit() {
   editMode = !editMode;
